@@ -48,7 +48,8 @@ gems: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+  input: GFM  
+  hard_wrap: true                          # use Github Flavored Markdown !important
 
 
 
