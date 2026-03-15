@@ -15,27 +15,36 @@ tags:
 ## 本地机器操作
 
 1. 拉取镜像。
+
 ```bash
 docker pull xhofe/alist:latest
 ```
+
 2. 打包镜像
+
 ```bash
 docker save xhofe/alist:latest -o alist.tar
 ```
+
 3. 上传到服务器。自己用termius或者其他工具上传。
 
 ## 服务器端操作
 
 1. 导入镜像
+
 ```bash
 docker load -i alist.tar
 ```
-	可以再确认一下镜像是否存在：
+
+  可以再确认一下镜像是否存在：
+
 ```bash
 docker images | grep alist
 ```
+
 2. 写`docker-compose.yaml`文件
-	这次 alist的compose文件如下：
+
+  这次 alist 的 compose 文件如下：
 
 ```yaml
 services:
@@ -49,6 +58,7 @@ services:
        - "5244:5244"
      restart: unless-stopped
 ```
+
 3. 启动
 
 ```bash
@@ -77,13 +87,16 @@ docker exec -it alist bash
 ### 文件与目录说明
 
 1. 数据持久化
+
 ```text
 宿主机：/etc/alist
 容器内：/opt/alist/data
 ```
+
 所有配置 / 数据库 / 存储信息都在宿主机。重建容器不会丢数据。
 
 2. 创建文件夹的正确方式
+
 本地存储（Local），在宿主机 `/etc/alist/...` 下创建。不要依赖容器内部目录。容器删除即丢失。
 
 ### 创建存储目录参数说明

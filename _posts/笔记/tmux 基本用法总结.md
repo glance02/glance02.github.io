@@ -96,5 +96,9 @@ tmux list-panes -a -F "#{session_name}: #{pane_current_command}"
 - Ctrl+B Z → 放大 pane
 - Ctrl+B  \[  →  查看历史输出
 
-`tmux kill-session -t mysession`
+## 6️⃣ 关闭会话
+
+```bash
+tmux kill-session -t mysession
+```
     

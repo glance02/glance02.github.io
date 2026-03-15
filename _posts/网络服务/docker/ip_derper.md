@@ -17,11 +17,12 @@ tags:
 1. **拉取镜像**：和在[alist](alist.md)中一样，先在本地pull，然后save上传到服务器，最后在服务器上load。
 2. **下载tailscale**：按照如下指令：
 
-	```bash
-	curl -fsSL https://tailscale.com/install.sh | sh
-	sudo tailscale up
-	```
-	之后会跳出认证提示，完成登录即可。
+   ```bash
+   curl -fsSL https://tailscale.com/install.sh | sh
+   sudo tailscale up
+   ```
+
+   之后会跳出认证提示，完成登录即可。
 
 3. 开放端口。需要开放两个端口，一个tcp，一个udp，按照yaml文件中来即可。
 
@@ -42,7 +43,7 @@ services:
       - DERP_ADDR=:11223
       - DERP_VERIFY_CLIENTS=true  # 初始部署关闭验证
     volumes:
-  	  - /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
+			- /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
 ```
 
 启动服务：
@@ -56,28 +57,33 @@ docker compose up -d
 ## Tailscale控制台配置
 
 1. **添加自定义DERP映射**
-	登录 [Tailscale Admin Console](https://login.tailscale.com/admin/)，进入你的网络。在 **Access Controls** 页面，找到 `derpMap` 字段，添加配置：
-	```json
-	"derpMap": {
-   		"OmitDefaultRegions": false, // 初始阶段设为false，与官方节点共存以便测试
-   		"Regions": {
-     	"901": {
-       	"RegionID": 901,
-       	"RegionCode": "my-derp",
-       	"RegionName": "My Server",
-       	"Nodes": [{
-         		"Name": "1",
-         		"RegionID": 901,
-         		"HostName": "121.43.249.54", 
-         		"DERPPort": 11223,
-         		"STUNPort": 3478,
-         		"InsecureForTests": true // 关键：允许使用自签名/不匹配证书
-       		}]
-     		}
-   		}
- 	}
-	```
-	最后记得点击save
+
+	 登录 [Tailscale Admin Console](https://login.tailscale.com/admin/)，进入你的网络。在 **Access Controls** 页面，找到 `derpMap` 字段，添加配置：
+
+	 ```json
+	 "derpMap": {
+		 "OmitDefaultRegions": false,
+		 "Regions": {
+			 "901": {
+				 "RegionID": 901,
+				 "RegionCode": "my-derp",
+				 "RegionName": "My Server",
+				 "Nodes": [
+					 {
+						 "Name": "1",
+						 "RegionID": 901,
+						 "HostName": "121.43.249.54",
+						 "DERPPort": 11223,
+						 "STUNPort": 3478,
+						 "InsecureForTests": true
+					 }
+				 ]
+			 }
+		 }
+	 }
+	 ```
+
+	 最后记得点击 save。
 
 ## 验证
 
