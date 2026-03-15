@@ -33,6 +33,43 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Rename posts to Jekyll date format
+        run: |
+          python3 - <<'EOF'
+          import os, re
+
+          posts_dir = "_posts"
+          date_pattern = re.compile(r'^\d{4}-\d{2}-\d{2}-')
+
+          for root, dirs, files in os.walk(posts_dir):
+              # 跳过隐藏目录（如 .obsidian）
+              dirs[:] = [d for d in dirs if not d.startswith('.')]
+              for fname in files:
+                  if not fname.endswith(('.md', '.markdown')):
+                      continue
+                  # 已符合规范的文件不处理
+                  if date_pattern.match(fname):
+                      continue
+                  fpath = os.path.join(root, fname)
+                  # 读取 Front Matter 中的 date
+                  date_str = None
+                  with open(fpath, encoding='utf-8') as f:
+                      content = f.read()
+                  fm = re.search(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
+                  if fm:
+                      m = re.search(r'^date:\s*["\']?(\d{4}-\d{2}-\d{2})', fm.group(1), re.MULTILINE)
+                      if m:
+                          date_str = m.group(1)
+                  if not date_str:
+                      print(f"SKIP (no date): {fpath}")
+                      continue
+                  # 生成新文件名
+                  name, ext = os.path.splitext(fname)
+                  new_fname = f"{date_str}-{name}{ext}"
+                  new_fpath = os.path.join(root, new_fname)
+                  os.rename(fpath, new_fpath)
+                  print(f"Renamed: {fname} -> {new_fname}")
+          EOF
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
