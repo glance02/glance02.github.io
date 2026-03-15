@@ -17,7 +17,7 @@ baseurl: ""                              # user site repo (glance02.github.io) s
 # SNS settings
 RSS: true
 # weibo_username:     huxpro
-zhihu_username:     郁玺
+zhihu_username:     dan-ting-qiu
 github_username:    glance02
 #twitter_username:  huxpro
 # facebook_username:  huxpro

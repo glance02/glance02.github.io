@@ -8,7 +8,6 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - 网络服务
     - Docker
-    - Tailscale
 ---
 这个docker镜像会自己在镜像里面创建自签名证书。为了一定程度上保证我的derp的安全，可以添加客户端验证。
 

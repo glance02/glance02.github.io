@@ -7,8 +7,6 @@ author:     "glance"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 项目笔记
-    - tmux
-    - Linux
 ---
 ## 1️⃣ 启动 tmux 会话
 

@@ -7,8 +7,6 @@ author:     "glance"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 深度学习
-    - CUDA
-    - WSL2
 ---
 ## 一、问题现象
 

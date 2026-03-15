@@ -7,7 +7,6 @@ author:     "glance"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 网络服务
-    - frp
 ---
 ## 一、环境架构
 

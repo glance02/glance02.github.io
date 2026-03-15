@@ -7,7 +7,6 @@ author:     "glance"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 网络服务
-    - n2n
 ---
 ## 获取并编译 n2n
 
