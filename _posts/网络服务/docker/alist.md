@@ -8,7 +8,6 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - 网络服务
     - Docker
-    - Alist
 ---
 服务器网络不稳定，`docker pull` / `curl` 经常失败。如果是普通的访问外网可以使用ssh反向代理，但是docker似乎有点不一样，反向代理还是无法正常拉取。多次尝试觉得本地拉取再用sftp上传是最简单的办法。
 

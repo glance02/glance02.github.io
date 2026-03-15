@@ -8,7 +8,6 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - 网络服务
     - n2n
-    - VPN
 ---
 ## 获取并编译 n2n
 
