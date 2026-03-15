@@ -15,7 +15,7 @@ baseurl: ""                              # user site repo (glance02.github.io) s
 # 例如：weibo_username、zhihu_username、github_username、facebook_username 等。
 # RSS 设置用于控制是否启用 RSS 订阅功能。
 # SNS settings
-RSS: true
+RSS: false
 # weibo_username:     huxpro
 zhihu_username:     dan-ting-qiu
 github_username:    glance02

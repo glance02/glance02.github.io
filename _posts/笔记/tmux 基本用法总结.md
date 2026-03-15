@@ -6,8 +6,9 @@ date:       2026-03-15 12:00:00
 author:     "glance"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 项目笔记
+    - 笔记
 ---
+
 ## 1️⃣ 启动 tmux 会话
 
 新建一个会话（session）：
