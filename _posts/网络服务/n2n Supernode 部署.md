@@ -11,10 +11,12 @@ tags:
 ## 获取并编译 n2n
 
 1. 安装编译依赖
+
 ```bash
 apt update
 apt install -y build-essential autoconf automake libtool pkg-config git
 ```
+
 2. 下载源码并生成 configure
 这一部分我感觉更重要的还是看作者自己的编译的readme。
 ```bash
@@ -23,6 +25,7 @@ cd n2n
 ./autogen.sh
 ```
 > `autogen.sh` 用于生成 `configure` 脚本（源码仓库默认不带）
+
 3. 编译并安装
 ```bash
 ./configure
@@ -34,10 +37,13 @@ make install
 ### 配置 systemd
 
 1. 创建 systemd 服务文件
+
 ```bash
 vim /etc/systemd/system/supernode.service
 ```
-	最终我正确的服务文件：
+
+最终我正确的服务文件：
+
 ```service
 [Unit]
 Description=n2n Supernode
