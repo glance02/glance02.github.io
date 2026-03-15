@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "git笔记"
+title:      "UseGit"
 subtitle:   "给自己就的git指南"
 date:       2026-03-15 14:06:00
 author:     "glance"

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "vim笔记"
+title:      "VimLearn"
 subtitle:   "vim笔记"
 date:       2026-03-15 12:00:00
 author:     "glance"

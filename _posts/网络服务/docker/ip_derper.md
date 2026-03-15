@@ -9,21 +9,26 @@ tags:
     - 网络服务
     - Docker
 ---
+
 这个docker镜像会自己在镜像里面创建自签名证书。为了一定程度上保证我的derp的安全，可以添加客户端验证。
 
 ## 前置准备
 
 1. **拉取镜像**：和在[alist](alist.md)中一样，先在本地pull，然后save上传到服务器，最后在服务器上load。
 2. **下载tailscale**：按照如下指令：
+
 	```bash
 	curl -fsSL https://tailscale.com/install.sh | sh
 	sudo tailscale up
 	```
-		之后会跳出认证提示，完成登录即可。
+	之后会跳出认证提示，完成登录即可。
+
 3. 开放端口。需要开放两个端口，一个tcp，一个udp，按照yaml文件中来即可。
+
 ## 创建并启动容器
 
 创建`docker-compose.yaml`文件。
+
 ```yaml
 services:
   derper:
@@ -39,10 +44,13 @@ services:
     volumes:
   	  - /var/run/tailscale/tailscaled.sock:/var/run/tailscale/tailscaled.sock
 ```
+
 启动服务：
+
 ```bash
 docker compose up -d
 ```
+
 可以输入`docker logs derper`来查看docker的运行信息。
 
 ## Tailscale控制台配置
@@ -74,6 +82,7 @@ docker compose up -d
 ## 验证
 
 在客户端输入：
+
 ```bash
 tailscale netcheck
 ```

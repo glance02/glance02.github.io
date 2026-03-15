@@ -8,6 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - 深度学习
 ---
+
 ## 一、问题现象
 
 **环境**：WSL2 (Ubuntu) + RTX 4070 Ti + Conda (vfm环境)
@@ -117,6 +118,7 @@ print(f"CUDA版本: {torch.version.cuda}")  # 应输出 11.3
 ```
 
 **命令行验证**：
+
 ```bash
 nvcc --version  # 应显示 Cuda compilation tools, release 11.3
 which nvcc      # 应输出 /usr/local/cuda-11.3/bin/nvcc
