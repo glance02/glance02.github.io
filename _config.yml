@@ -1,22 +1,26 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: glance Blog
+SEOTitle: 郁玺的博客 | glance Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: 2431916178@qq.com
 description: ""
-keyword: ""
+keyword: "郁玺"
 url: "http://huangxuan.me"              # your host, for absolute URL
 baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
+# SNS（社交网络服务）设置部分，用于配置博客作者在各大社交平台的用户名。
+# 这些设置可以用于在博客页面显示作者的社交链接或集成相关功能。
+# 例如：weibo_username、zhihu_username、github_username、facebook_username 等。
+# RSS 设置用于控制是否启用 RSS 订阅功能。
 # SNS settings
 RSS: false
 weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+zhihu_username:     郁玺
+github_username:    glance02
 #twitter_username:  huxpro
-facebook_username:  huxpro
+# facebook_username:  huxpro
 
 
 
