@@ -48,9 +48,10 @@ gems: [jekyll-paginate]
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM                          # use Github Flavored Markdown !important
-
-
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    theme: github    # 可选: github, monokai, monokai255, solarized, solarized-light 等
 
 # Disqus settings
 #disqus_username: _your_disqus_short_name_

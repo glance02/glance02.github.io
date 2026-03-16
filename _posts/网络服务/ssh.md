@@ -21,10 +21,10 @@ ssh -R 7897:localhost:7897 -p 6419 root@121.43.249.54
 
 2. 在服务器上配置代理：
 
-   ```bash
-   export https_proxy=http://127.0.0.1:7897
-   export http_proxy=http://127.0.0.1:7897
-   ```
+```bash
+export https_proxy=http://127.0.0.1:7897
+export http_proxy=http://127.0.0.1:7897
+```
 
 ## 给远程服务器添加公钥
 
@@ -50,3 +50,10 @@ chmod 600 ~/.ssh/authorized_keys
 sudo systemctl daemon-reload
 sudo systemctl restart ssh
 ```
+
+
+## 数学公式
+
+$$
+A_i = B_i + \frac{C_i}{B_i}
+$$
