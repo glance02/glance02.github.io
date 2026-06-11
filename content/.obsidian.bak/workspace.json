@@ -1,0 +1,260 @@
+{
+  "main": {
+    "id": "44e54cd45b4c389f",
+    "type": "split",
+    "children": [
+      {
+        "id": "91e6fa49df4798e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b22a7a31781054af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/将D盘存储分给C盘.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "将D盘存储分给C盘"
+            }
+          },
+          {
+            "id": "2b725d96abd7b6c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/将D盘存储分给C盘.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "将D盘存储分给C盘"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e1de603e810ea2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "cad530a22f8624ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f18ca4ecb1fca998",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "bfb75ae7e7e547d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"tags\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e14d8333a8616d43",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "208dfd4c88ee3ecc",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9b208fab87a72b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa00d93f9440ed53",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docker/ip_derper.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "ip_derper 的反向链接列表"
+            }
+          },
+          {
+            "id": "d363389d9d6a27e0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "网络服务/ssh.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "ssh 的出链列表"
+            }
+          },
+          {
+            "id": "96076fdf08737f64",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "234a5af83728daf5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8dd2eba8ec3f9f67",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "笔记/将D盘存储分给C盘.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "将D盘存储分给C盘 的大纲"
+            }
+          },
+          {
+            "id": "72abcb33355c675a",
+            "type": "leaf",
+            "state": {
+              "type": "keep-the-rhythm",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Keep the Rhythm"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 350.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "remotely-save:Remotely Save": false,
+      "keep-the-rhythm:Word Count Stats": false
+    }
+  },
+  "active": "2b725d96abd7b6c0",
+  "lastOpenFiles": [
+    "社交网络/反向可达集.md",
+    "笔记/pic/pic2.png",
+    "笔记/pic/pic1.png",
+    "Pasted.md",
+    "笔记/pic/Pasted.md",
+    "笔记/将D盘存储分给C盘.md",
+    "笔记/pic/Pasted image 20260414104542.png",
+    "笔记/tmux 基本用法总结.md",
+    "笔记/pic/Pasted image 20260414104750.png",
+    "笔记/pic",
+    "社交网络/NSGA-II 算法.md",
+    "笔记/win上的特殊路径.md",
+    "pic.md",
+    "社交网络/pic/nsga2_flowchart.svg",
+    "社交网络/pic/nsga2_pareto_front.svg",
+    "社交网络/六度分离理论.md",
+    "社交网络/社交网络工具.md",
+    "社交网络/pic/imm_algorithm_flowchart.svg",
+    "社交网络/信息传播模型.md",
+    "社交网络/影响力最大化问题.md",
+    "社交网络/pic",
+    "网络服务/部署 rclone WebDAV 服务.md",
+    "网络服务/部署 rclone WebDAV 服务总结.md",
+    "社交网络",
+    "网络服务/ssh.md",
+    "网络服务/n2n Supernode 部署.md",
+    "网络服务/frp.md",
+    "笔记/useGit.md",
+    "深度学习/WSL2 + PyTorch CUDA 环境配置踩坑记录.md",
+    "笔记/vimLearn.md",
+    "智慧能源概论/成绩构成.md",
+    "笔记",
+    "网络服务/tmux 基本用法总结.md",
+    "项目笔记/WSL2 + PyTorch CUDA 环境配置踩坑记录.md",
+    "项目笔记",
+    "WSL2 + PyTorch CUDA 环境配置踩坑记录.md",
+    "IMG20260302200902.jpg",
+    "智慧能源概论",
+    "_debug_remotely_save/sync_plans_hist_exported_on_1771813672951.md",
+    "_debug_remotely_save",
+    "docker",
+    "网络服务",
+    "深度学习",
+    "未命名.canvas"
+  ]
+}
