@@ -14,7 +14,7 @@ tags:
 
 ## 前置准备
 
-1. **拉取镜像**：和在[alist](alist.md)中一样，先在本地pull，然后save上传到服务器，最后在服务器上load。
+1. **拉取镜像**：和在 [[alist]] 中一样，先在本地 pull，然后 save 上传到服务器，最后在服务器上 load。
 2. **下载tailscale**：按照如下指令：
 
 	```bash
@@ -87,3 +87,9 @@ docker compose up -d
 tailscale netcheck
 ```
 检查是否出现自己的derp中继服务。
+
+## 相关笔记
+
+- [[alist]]
+- [[frp]]
+- [[n2n Supernode 部署]]

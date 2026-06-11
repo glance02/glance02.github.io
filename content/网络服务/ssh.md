@@ -11,6 +11,7 @@ tags:
 
 ## 使用-R实现反向代理
 注意需要先打开clash的Alow Lan，即局域网连接。
+这个方式适合临时给服务器补代理；如果要长期暴露本地服务，可以看 [[frp]]。
 1. 在安装 clash 的本地电脑上运行：
 ```
 ssh -R 7897:localhost:7897 -p 6419 root@121.43.249.54
@@ -40,3 +41,9 @@ chmod 600 ~/.ssh/authorized_keys
 sudo systemctl daemon-reload
 sudo systemctl restart ssh
 ```
+
+## 相关笔记
+
+- [[frp]]
+- [[tmux 基本用法总结]]
+- [[useGit]]

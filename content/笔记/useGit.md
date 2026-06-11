@@ -11,6 +11,8 @@ tags:
 
 # Git学习
 
+远程仓库通常需要配合 [[ssh]] 密钥使用；如果是在服务器上编译源码，也会和 [[n2n Supernode 部署]] 这类笔记中的 `git clone` 流程关联。
+
 ## 常用指令
 
 ### **常规操作**
@@ -18,8 +20,8 @@ tags:
 1. 创建本地仓库和远程仓库，并将两个仓库连接起来：
 
    ```bash
-   git init  #初始化`
-   git remote add origin ssh连接 #将远程分支命名为origin
+   git init  # 初始化`
+   git remote add origin ssh连接 # 将远程分支命名为origin
    ```
 
    一般情况下，git中自动创建一个master分支。
@@ -31,7 +33,7 @@ tags:
 4. 更新完成之后,输入如下代码完成一次代码提交
 
    ```bash
-   git add . #将所有代码添加到暂存区，然后使用 `
+   git add . # 将所有代码添加到暂存区，然后使用 `
    git commit -m "注释"
    ```
 
@@ -136,3 +138,9 @@ git rebase -i HEAD~3
 ### 导入github中其他分支的代码：
 
 使用`git fetch origin`拉去远程仓库,，然后 `git reset --hard master`把其他分支的东西强制下在到本地，如果master分支和main分支无共同交集，按理此时无法将修改后的代码传入main分支，需要输入 `git pull origin main --allow-unrelated-histories`来强制把main分支的文件下载入本地，之后则正常修改即可。
+
+## 相关笔记
+
+- [[ssh]]
+- [[vimLearn]]
+- [[tmux 基本用法总结]]

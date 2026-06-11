@@ -13,6 +13,8 @@ tags:
 
 **环境**：WSL2 (Ubuntu) + RTX 4070 Ti + Conda (vfm环境)
 
+这篇和 [[win上的特殊路径]] 一起记录 Windows/WSL 混合环境下的路径、驱动和终端配置问题；长时间训练时可以配合 [[tmux 基本用法总结|tmux]] 使用。
+
 **症状**：
 - `nvidia-smi` 正常显示显卡信息（Driver Version: 591.74）
 - `ls -l /dev/nvidia*` 报错（No such file or directory）——**这是WSL2的正常现象**
@@ -153,3 +155,8 @@ which nvcc      # 应输出 /usr/local/cuda-11.3/bin/nvcc
 2. **必须暴露 `/usr/lib/wsl/lib`** 给 PyTorch（通过 `LD_LIBRARY_PATH` 或 `ldconfig`）
 3. **版本匹配**：PyTorch 1.11.0+cu113 → CUDA 11.3 Toolkit
 4. **环境变量三件套**：`PATH`（nvcc）、`CUDA_HOME`（PyTorch找CUDA）、`LD_LIBRARY_PATH`（找libcuda.so）
+
+## 相关笔记
+
+- [[tmux 基本用法总结]]
+- [[win上的特殊路径]]

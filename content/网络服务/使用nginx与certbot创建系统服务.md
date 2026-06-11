@@ -1,5 +1,5 @@
 
-创建一个在本地某一个端口运行的服务，这次以创建一个rclone服务为例。
+创建一个在本地某一个端口运行的服务，这次以创建一个 [[部署 rclone WebDAV 服务|rclone WebDAV 服务]]为例。
 
 ## 核心架构原理
 
@@ -110,3 +110,8 @@ sudo certbot --nginx -d limm.glance02.xyz
     sudo systemctl restart rclone-limm
     sudo systemctl restart nginx
     ```
+
+## 相关笔记
+
+- [[部署 rclone WebDAV 服务]]
+- [[alist]]

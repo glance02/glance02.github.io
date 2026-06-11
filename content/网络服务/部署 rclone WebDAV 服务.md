@@ -1,7 +1,7 @@
 
 ## 原因
 
-原本使用 AList 挂载本地存储并对外提供 WebDAV 服务，供 Zotero 和 Obsidian 同步使用。排查后发现 AList 的 WebDAV 实现不完整，`DELETE` 方法返回 405，导致 Zotero 和 Obsidian 验证服务器时失败。rclone 的 WebDAV 实现完整，支持所有必要的方法，因此用它替代 AList 提供 WebDAV 服务。
+原本使用 [[alist|AList]] 挂载本地存储并对外提供 WebDAV 服务，供 Zotero 和 Obsidian 同步使用。排查后发现 AList 的 WebDAV 实现不完整，`DELETE` 方法返回 405，导致 Zotero 和 Obsidian 验证服务器时失败。rclone 的 WebDAV 实现完整，支持所有必要的方法，因此用它替代 AList 提供 WebDAV 服务。
 
 ---
 
@@ -89,3 +89,7 @@ nginx -t && systemctl reload nginx
 
 用户名和密码填服务文件里设置的账号密码。
 
+## 相关笔记
+
+- [[alist]]
+- [[使用nginx与certbot创建系统服务]]
