@@ -1,6 +1,8 @@
 ## 前置条件检查
 
-检查C盘和D盘是否在一块内存条上。最简单的办法是先打开磁盘管理
+**检查C盘和D盘是否在一块内存条上**。
+
+最简单的办法是先打开磁盘管理：
 
 ![Pasted image 20260611101859.png](<pic/Pasted image 20260611101859.png>)
 
@@ -9,10 +11,10 @@
 
 ![Pasted image 20260611102021.png|697](<pic/Pasted image 20260611102021.png>)
 
-如果不在的话，就不能试用此方法。一般都是在的。如果在的话，就可以去下载disk genius。使用到disk genius和系统自带的磁盘管理工具来拓展C盘。
+如果不在的话，就不能使用此方法。一般都是在的。如果在的话，就可以去下载disk genius。使用到disk genius和系统自带的磁盘管理工具来拓展C盘。
 ## 安装Disk Genius
 
-把diskgenius安装在非D盘
+把diskgenius安装在非D盘。
 ## 调整D盘分区
 
 1. 在diskgenius里面右键d盘调整分区大小。
