@@ -4,7 +4,7 @@ Windows 里有一些**特殊路径变量/环境变量**，它们是系统内置�
 
 ## 一、几种不同类型的"特殊路径"
 
-### 🔷 1. PowerShell 变量 —— `$PROFILE`
+### 1. PowerShell 变量 —— `$PROFILE`
 
 `$PROFILE` 是 PowerShell 专属变量，指向当前用户的 **PowerShell 配置文件路径**，类似于 Linux 的 `~/.bashrc`。
 
@@ -78,7 +78,7 @@ CurrentUserCurrentHost    ← 最后（优先级最高）
 
 ---
 
-### 🔷 2. 环境变量 —— `%变量名%`
+### 2. 环境变量 —— `%变量名%`
 
 在**命令提示符（CMD）**和**资源管理器地址栏**中使用：
 
@@ -108,7 +108,7 @@ CurrentUserCurrentHost    ← 最后（优先级最高）
 
 ---
 
-### 🔷 3. Shell 特殊文件夹 —— 在地址栏输入
+### 3. Shell 特殊文件夹 —— 在地址栏输入
 
 在**资源管理器地址栏**直接输入这些名称，可以快速跳转：
 
@@ -132,7 +132,7 @@ CurrentUserCurrentHost    ← 最后（优先级最高）
 
 ---
 
-### 🔷 4. PowerShell 中的环境变量写法
+### 4. PowerShell 中的环境变量写法
 
 PowerShell 里访问环境变量用 `$env:` 前缀：
 

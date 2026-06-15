@@ -140,8 +140,6 @@ plugins:
       enableRSS: true
   - source: github:quartz-community/favicon
     enabled: true
-  - source: github:quartz-community/og-image
-    enabled: false
   - source: github:quartz-community/cname
     enabled: true
   - source: github:quartz-community/canvas-page
@@ -273,7 +271,7 @@ plugins:
       exportPadding: 20
     order: 50
   - source: github:quartz-community/og-image
-    enabled: false
+    enabled: true
     options:
       colorScheme: lightMode
       width: 1200

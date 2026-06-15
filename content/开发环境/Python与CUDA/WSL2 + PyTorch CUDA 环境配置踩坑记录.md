@@ -130,20 +130,20 @@ which nvcc      # 应输出 /usr/local/cuda-11.3/bin/nvcc
 
 ## 五、踩坑记录
 
-### ❌ 坑1：寻找 `/dev/nvidia*`
+### 坑1：寻找 `/dev/nvidia*`
 **错误认知**：以为必须出现 `/dev/nvidia0` 才代表 GPU 可用。  
 **事实**：WSL2 使用 `/dev/dxg` 和 `/usr/lib/wsl/lib/libcuda.so` 机制，**不应该存在** `/dev/nvidia*`。
 
-### ❌ 坑2：路径错误
+### 坑2：路径错误
 **错误配置**：初期误以为 apt 安装的 CUDA 在 `/usr/lib/cuda`，配置了错误路径。  
 **正确路径**：`/usr/local/cuda-11.3/`（与手动安装位置一致）。
 
-### ❌ 坑3：缺少 `libcuda.so` 路径
+### 坑3：缺少 `libcuda.so` 路径
 **现象**：`nvcc` 已可用，但 PyTorch 仍报 `CUDA available: False`。  
 **原因**：`libcuda.so` 位于 `/usr/lib/wsl/lib`（WSL2 从 Windows 挂载的特殊目录），但系统库缓存未包含此路径。  
 **解决**：必须通过 `ld.so.conf.d` 配置或 `LD_LIBRARY_PATH` 指定。
 
-### ❌ 坑4：重复安装驱动
+### 坑4：重复安装驱动
 **风险**：如果在 WSL2 内运行了 `.run` 文件并勾选了 Driver，会安装 Linux 版驱动，与 Windows 驱动冲突。  
 **原则**：WSL2 内**只安装 CUDA Toolkit**，不安装 Driver。
 
