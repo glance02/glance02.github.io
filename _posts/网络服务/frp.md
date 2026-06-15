@@ -11,6 +11,8 @@ tags:
 
 ## 一、环境架构
 
+frp 和 [[ssh]] 的反向代理都可以解决“内网机器访问外部资源/暴露本地服务”的问题；frp 更适合长期暴露多个本地服务。
+
 ```
 [任意设备] 
       ↓ SSH/HTTP 访问 公网地址:端口
@@ -176,7 +178,7 @@ nssm start frpc
 | `serverPort`                       | int    | 服务端 bindPort                 | `7000`                |
 | `auth.token`                       | string | 连接密码                         | `"password123"`       |
 | `user`                             | string | 用户标识（前缀）                     | `"home-pc"`           |
-| `[[proxies]]`                      | table  | 代理配置块（可多个）                   | -                     |
+| `proxies` 数组表                   | table  | 代理配置块（可多个）                   | -                     |
 | `proxies.name`                     | string | 服务唯一名称                       | `"ssh"`               |
 | `proxies.type`                     | string | 类型：`tcp`/`udp`/`http`/`stcp` | `"tcp"`               |
 | `proxies.localIP`                  | string | 本地服务地址                       | `"127.0.0.1"`         |
@@ -223,3 +225,10 @@ bindPort = 18080  # 本地访问 127.0.0.1:18080 即穿透到对端
 ./frpc reload -c frpc.toml             # 热重载配置（不中断）
 ./frpc status -c frpc.toml             # 查看连接状态
 ```
+
+## 相关笔记
+
+- [[ssh]]
+- [[n2n Supernode 部署]]
+- [[ip_derper]]
+- [[tmux 基本用法总结]]

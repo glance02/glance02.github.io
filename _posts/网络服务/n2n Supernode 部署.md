@@ -11,6 +11,8 @@ tags:
 
 ## 获取并编译 n2n
 
+n2n 和 [[frp]]、[[ip_derper]] 都属于“让不同网络中的设备互通”的方案，只是 n2n 更偏向组网，frp 更偏向端口穿透。
+
 1. 安装编译依赖
 
 ```bash
@@ -27,11 +29,9 @@ git clone https://github.com/ntop/n2n.git
 cd n2n
 ./autogen.sh
 ```
-
 > `autogen.sh` 用于生成 `configure` 脚本（源码仓库默认不带）
 
 3. 编译并安装
-
 ```bash
 ./configure
 make
@@ -39,7 +39,6 @@ make
 # optionally install
 make install
 ```
-
 ### 配置 systemd
 
 1. 创建 systemd 服务文件
@@ -95,6 +94,11 @@ ss -ulnp | grep supernode
 ### 防火墙与安全组
 
 自己关一下服务器防火墙，或者选择性放开一些。最重要的是需要在服务器的安全组部分放开端口。需要放开的端口有：
-
 - UDP 9527
 - TCP 9527
+
+## 相关笔记
+
+- [[frp]]
+- [[ip_derper]]
+- [[ssh]]

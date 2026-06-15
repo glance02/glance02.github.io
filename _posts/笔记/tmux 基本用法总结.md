@@ -11,6 +11,8 @@ tags:
 
 ## 1️⃣ 启动 tmux 会话
 
+tmux 很适合配合 [[ssh]] 远程服务器使用，尤其是跑长时间训练或部署任务时；[[WSL2 + PyTorch CUDA 环境配置踩坑记录]] 这类 GPU 环境也常需要它保活。
+
 新建一个会话（session）：
 ```bash
 tmux new -s session_name
@@ -96,9 +98,11 @@ tmux list-panes -a -F "#{session_name}: #{pane_current_command}"
 - Ctrl+B Z → 放大 pane
 - Ctrl+B  \[  →  查看历史输出
 
-## 6️⃣ 关闭会话
+`tmux kill-session -t mysession`
 
-```bash
-tmux kill-session -t mysession
-```
+## 相关笔记
+
+- [[ssh]]
+- [[WSL2 + PyTorch CUDA 环境配置踩坑记录]]
+- [[vimLearn]]
     
