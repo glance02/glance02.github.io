@@ -23,7 +23,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/rclone serve webdav /opt/limm --addr 127.0.0.1:6081 --user limm --pass 0000t --vfs-cache-mode full --log-level INFO
+ExecStart=/usr/bin/rclone serve webdav /opt/limm --addr 127.0.0.1:6081 --user admin --pass 123456 --vfs-cache-mode full --log-level INFO
 Restart=on-failure
 RestartSec=5
 

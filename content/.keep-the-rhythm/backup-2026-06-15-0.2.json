@@ -1269,6 +1269,28 @@
         "charCountStart": 803,
         "changes": [],
         "id": 94
+      },
+      {
+        "date": "2026-06-15",
+        "filePath": "深度学习.md",
+        "wordCountStart": 0,
+        "charCountStart": 0,
+        "changes": [],
+        "id": 95
+      },
+      {
+        "date": "2026-06-15",
+        "filePath": "笔记/在AutoDL上配置nvim.md",
+        "wordCountStart": 190,
+        "charCountStart": 763,
+        "changes": [
+          {
+            "timeKey": "16:20",
+            "w": 0,
+            "c": 0
+          }
+        ],
+        "id": 96
       }
     ]
   }
