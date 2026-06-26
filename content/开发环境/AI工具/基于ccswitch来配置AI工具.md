@@ -1,3 +1,9 @@
+---
+title: 基于 ccswitch 来配置 AI 工具
+permalink: ai/ccswitch
+aliases:
+  - 开发环境/ai工具配置/基于ccswitch来配置ai工具
+---
 
 ## 前言
 
