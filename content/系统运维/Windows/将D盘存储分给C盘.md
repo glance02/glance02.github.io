@@ -1,3 +1,7 @@
+---
+permalink: win/switchDtoC
+---
+
 ## 前置条件检查
 
 **检查C盘和D盘是否在一块内存条上**。
