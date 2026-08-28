@@ -7,9 +7,20 @@
 source /etc/network_turbo
 ```
 
+## fish
+
+可以直接安装。
+
+```bash
+apt update
+apt install fish
+```
+
+版本较旧，没有哈基米主题。直接使用默认主题即可。
+
 ## nvim
 
-nvim 安装和配置，参考 [在AutoDL上配置nvim](../编辑器/在AutoDL上配置nvim.md)
+nvim 安装和配置，参考 [[在AutoDL上配置nvim]]
 
 ## yazi
 
@@ -54,16 +65,6 @@ end
 ```
 
 会自动加载，不用刷新配置。
-
-## fish
-
-可以直接安装。
-
-```bash
-apt install fish
-```
-
-版本较旧，直接使用默认主题即可
 
 ## zellij
 
