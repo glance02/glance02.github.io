@@ -39,4 +39,10 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-等待安装，即可完成
+等待安装，即可完成。
+
+最后，记得关掉autodl的学术加速：
+
+```
+unset http_proxy && unset https_proxy
+```
