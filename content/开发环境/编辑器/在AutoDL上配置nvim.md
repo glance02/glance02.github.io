@@ -1,4 +1,4 @@
-## 安装nvim
+## ⁠1. 安装nvim
 
 因为AutoDL上面的apt下载的nvim版本很旧，所以需要下载github上的包。需要先打开学术加速，这个AutoDL有。运行如下：
 
@@ -23,7 +23,7 @@ nvim --version
 ```
 
 
-## 安装 Lazyvim 配置
+## ⁠2. 安装 Lazyvim 配置
 
 运行：
 

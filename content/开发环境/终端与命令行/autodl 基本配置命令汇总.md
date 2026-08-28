@@ -7,7 +7,7 @@
 source /etc/network_turbo
 ```
 
-## fish
+## ⁠1. fish
 
 可以直接安装。
 
@@ -18,13 +18,13 @@ apt install fish
 
 版本较旧，没有哈基米主题。直接使用默认主题即可。
 
-## nvim
+## ⁠2. nvim
 
 nvim 安装和配置，参考 [[在AutoDL上配置nvim]]
 
-## yazi
+## ⁠3. yazi
 
-### 安装yazi
+### ⁠3.1. 安装yazi
 
 Yazi 现在已经有官方 Ubuntu/Debian APT 仓库，推荐直接把官方源加进去进行安装。
 
@@ -42,7 +42,7 @@ apt update
 apt install yazi
 ```
 
-### 配置 y （实现文件跳转）
+### ⁠3.2. 配置 y （实现文件跳转）
 
 主要就在fish中使用y。Fish 推荐一种更干净的方式：单独给函数建文件：
 
@@ -66,9 +66,9 @@ end
 
 会自动加载，不用刷新配置。
 
-## zellij
+## ⁠4. zellij
 
-### 安装zellij
+### ⁠4.1. 安装zellij
 
 AutoDL 旧 Ubuntu 环境，建议直接装 **musl 版本**，这样基本不受旧版 `glibc` 影响：
 
@@ -84,7 +84,7 @@ tar -xzf zellij.tar.gz
 install -m 755 zellij /usr/local/bin/zellij
 ```
 
-### 配置主题
+### ⁠4.2. 配置主题
 
 配置一个简单的主题就可以了。
 
@@ -97,7 +97,7 @@ nvim ~/.config/zellij/config.kdl
 查找 theme，然后把值替换成喜欢的，比如 `catppuccin-mocha`
 
 
-## 关闭学术加速
+## ⁠5. 关闭学术加速
 
 ```
 unset http_proxy && unset https_proxy
