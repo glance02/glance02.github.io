@@ -1,0 +1,15 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Border",
+  "showRibbon": true,
+  "interfaceFontFamily": "仿宋",
+  "textFontFamily": "华文仿宋,仿宋",
+  "baseFontSizeAction": true,
+  "baseFontSize": 21,
+  "enabledCssSnippets": [
+    "fileLine"
+  ],
+  "showViewHeader": false,
+  "monospaceFontFamily": "JetBrainsMono NF",
+  "accentColor": ""
+}

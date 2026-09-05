@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "source": "termy",
+  "updatedAt": "2026-08-28T19:04:38.381Z",
+  "vaultRoot": "E:/Applications/quartz/content",
+  "workspaceFolders": [
+    "E:/Applications/quartz/content"
+  ],
+  "activeFile": {
+    "filePath": "E:\\Applications\\quartz\\content\\开发环境\\终端与命令行\\lazygit.md",
+    "vaultPath": "开发环境/终端与命令行/lazygit.md",
+    "fileUrl": "file:///E:/Applications/quartz/content/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C/lazygit.md",
+    "hasFocus": true
+  },
+  "openFiles": [
+    {
+      "filePath": "E:\\Applications\\quartz\\content\\开发环境\\终端与命令行\\lazygit.md",
+      "vaultPath": "开发环境/终端与命令行/lazygit.md",
+      "fileUrl": "file:///E:/Applications/quartz/content/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C/lazygit.md",
+      "isActive": true
+    }
+  ],
+  "selection": {
+    "text": "",
+    "isEmpty": true,
+    "from": {
+      "line": 10,
+      "ch": 0,
+      "offset": 188
+    },
+    "to": {
+      "line": 10,
+      "ch": 0,
+      "offset": 188
+    }
+  }
+}

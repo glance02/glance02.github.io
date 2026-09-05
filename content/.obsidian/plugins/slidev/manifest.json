@@ -1,0 +1,11 @@
+{
+  "id": "slidev",
+  "name": "Slidev",
+  "version": "0.2.0",
+  "minAppVersion": "1.0.0",
+  "description": "Create Markdown-based presentations using Slidev.",
+  "author": "Nir Tamir",
+  "authorUrl": "https://github.com/nirtamir2",
+  "fundingUrl": "https://github.com/sponsors/nirtamir2",
+  "isDesktopOnly": true
+}

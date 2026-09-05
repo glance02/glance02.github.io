@@ -1,0 +1,14 @@
+{
+  "spellcheck": false,
+  "vimMode": false,
+  "readableLineLength": true,
+  "showIndentGuide": false,
+  "promptDelete": false,
+  "strictLineBreaks": false,
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./figures",
+  "showUnsupportedFiles": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative"
+}
