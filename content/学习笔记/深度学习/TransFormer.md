@@ -72,17 +72,27 @@ $$Q=XW_Q, \qquad K=XW_K, \qquad V=XW_V$$
 
 以“书”为例，它的 Query 会分别和所有 token 的 Key 做点积。结果越大，说明“书”越应关注该 token。
 
+原论文给出的缩放点积注意力公式是：
+
+$$\text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+
+在需要屏蔽某些位置时（例如 Decoder 不能偷看未来 token，或忽略 padding），工程实现会在 softmax **之前**给对应的分数加上掩码。把这一步写进公式，才得到常见的扩展形式：
+
 $$\text{Attention}(Q,K,V)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + M\right)V$$
+
+其中允许关注的位置通常令 $M_{ij}=0$，禁止关注的位置令 $M_{ij}=-\infty$；这样 softmax 后被禁止位置的权重就会变成 0。`+M` 是带掩码时的实现写法，不是原论文展示的基础公式。
 
 按顺序理解这个公式：
 
 ```text
 QKᵀ              每个 token 对每个 token 的相关性分数
 ÷ √d_k           防止维度大时分数过大，使 softmax 过于极端
-+ M               加入掩码：忽略 padding 或禁止偷看未来
++ M（可选）       加入掩码：忽略 padding 或禁止偷看未来
 softmax           每一行变成权重和为 1 的分布
 权重 × V          对所有 token 的信息做加权求和
 ```
+
+![](figures/Pasted%20image%2020260906192329.png)
 
 输出中每个位置仍是一个向量，但它已经融合了整个上下文的信息。这就是“自”注意力：Q、K、V 都来自同一序列。
 
@@ -102,6 +112,12 @@ softmax           每一行变成权重和为 1 的分布
 只做一次注意力像只用一种“观察角度”。多头注意力会并行做 $h$ 次较小的注意力，再拼接并投影：
 
 $$\text{MultiHead}(Q,K,V)=\text{Concat}(head_1,\ldots,head_h)W_O$$
+
+原论文中的结构如下：先分别对 $Q$、$K$、$V$ 做线性投影，再并行计算 $h$ 个缩放点积注意力，最后将各个头的结果拼接（Concat）并通过一个线性层：
+
+![原论文中的多头注意力结构](figures/multi-head-attention.png)
+
+图中每个紫色模块代表一个注意力头；它们使用不同的投影参数，因此可以从不同角度计算 token 之间的关系。
 
 不同头可能分别学到指代、语法依赖、邻近词、主题关联等模式。注意：这是一种常见解释，不应把某个头固定地理解为某种人类语言规则。
 
@@ -136,6 +152,10 @@ $$\text{FFN}(x)=W_2\,\sigma(W_1x+b_1)+b_2$$
 ## 5. 原始 Transformer：Encoder + Decoder
 
 论文 *Attention Is All You Need* 的 Transformer 用于机器翻译，由编码器和解码器堆叠而成。
+
+下面是原论文给出的完整结构图。左侧是重复 $N$ 次的 Encoder，右侧是重复 $N$ 次的 Decoder；底部输入 embedding 与位置编码相加后，依次经过注意力、前馈网络、残差连接和 LayerNorm。
+
+![原论文中的 Transformer 整体架构](figures/transformer-architecture.png)
 
 ```text
 源语言：I love deep learning
