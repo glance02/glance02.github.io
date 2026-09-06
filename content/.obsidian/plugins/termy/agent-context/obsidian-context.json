@@ -1,37 +1,24 @@
 {
   "schemaVersion": 1,
   "source": "termy",
-  "updatedAt": "2026-08-28T19:04:38.381Z",
-  "vaultRoot": "E:/Applications/quartz/content",
+  "updatedAt": "2026-09-06T02:47:25.089Z",
+  "vaultRoot": "D:/code/github/glance02.github.io/content",
   "workspaceFolders": [
-    "E:/Applications/quartz/content"
+    "D:/code/github/glance02.github.io/content"
   ],
   "activeFile": {
-    "filePath": "E:\\Applications\\quartz\\content\\开发环境\\终端与命令行\\lazygit.md",
-    "vaultPath": "开发环境/终端与命令行/lazygit.md",
-    "fileUrl": "file:///E:/Applications/quartz/content/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C/lazygit.md",
-    "hasFocus": true
+    "filePath": "D:\\code\\github\\glance02.github.io\\content\\学习笔记\\深度学习\\22 池化层（Pooling Layer）.md",
+    "vaultPath": "学习笔记/深度学习/22 池化层（Pooling Layer）.md",
+    "fileUrl": "file:///D:/code/github/glance02.github.io/content/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/22%20%E6%B1%A0%E5%8C%96%E5%B1%82%EF%BC%88Pooling%20Layer%EF%BC%89.md",
+    "hasFocus": false
   },
   "openFiles": [
     {
-      "filePath": "E:\\Applications\\quartz\\content\\开发环境\\终端与命令行\\lazygit.md",
-      "vaultPath": "开发环境/终端与命令行/lazygit.md",
-      "fileUrl": "file:///E:/Applications/quartz/content/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/%E7%BB%88%E7%AB%AF%E4%B8%8E%E5%91%BD%E4%BB%A4%E8%A1%8C/lazygit.md",
+      "filePath": "D:\\code\\github\\glance02.github.io\\content\\学习笔记\\深度学习\\22 池化层（Pooling Layer）.md",
+      "vaultPath": "学习笔记/深度学习/22 池化层（Pooling Layer）.md",
+      "fileUrl": "file:///D:/code/github/glance02.github.io/content/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/22%20%E6%B1%A0%E5%8C%96%E5%B1%82%EF%BC%88Pooling%20Layer%EF%BC%89.md",
       "isActive": true
     }
   ],
-  "selection": {
-    "text": "",
-    "isEmpty": true,
-    "from": {
-      "line": 10,
-      "ch": 0,
-      "offset": 188
-    },
-    "to": {
-      "line": 10,
-      "ch": 0,
-      "offset": 188
-    }
-  }
+  "selection": null
 }
