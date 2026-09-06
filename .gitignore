@@ -14,3 +14,11 @@ quartz/cli/tui/dist/
 _site/
 postsbak/
 ./content/.obsidian/
+
+# Obsidian local state: keep shared settings, ignore device-specific runtime data.
+content/.obsidian/workspace*.json
+content/.obsidian/cache/
+content/.obsidian/plugins/termy/agent-context/
+content/.obsidian/plugins/termy/binaries/
+content/.obsidian/plugins/typewriter-mode/cursor-positions.json
+content/.trash/
