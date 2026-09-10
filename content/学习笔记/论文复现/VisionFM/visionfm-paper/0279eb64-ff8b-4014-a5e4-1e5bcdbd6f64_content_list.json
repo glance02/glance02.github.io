@@ -1,0 +1,2122 @@
+[
+    {
+        "type": "text",
+        "text": "ORIGINAL ARTICLE",
+        "bbox": [
+            83,
+            136,
+            217,
+            152
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Development and Validation of a Multimodal Multitask Vision Foundation Model for Generalist Ophthalmic Artificial Intelligence",
+        "text_level": 1,
+        "bbox": [
+            81,
+            156,
+            867,
+            247
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Jianing Qiu , Ph.D.,<sup>1</sup> Jian Wu , M.D., Ph.D.,<sup>2,3</sup> Hao Wei , M.Sc.,<sup>1</sup> Peilun Shi , M.Res.,<sup>1</sup> Minqing Zhang , M.Sc.,<sup>1</sup> Yunyun Sun , M.D., Ph.D.,<sup>2</sup> Lin Li , Ph.D.,<sup>4</sup> Hanruo Liu , Ph.D.,<sup>2</sup> Hongyi Liu , M.B.B.S.,<sup>2</sup> Simeng Hou , M.B.B.S.,<sup>2</sup> Yuyang Zhao , M.B.B.S.,<sup>2</sup> Xuehui Shi , M.D.,<sup>2</sup> Junfang Xian , M.D., Ph.D.,<sup>5</sup> Xiaoxia Qu , Ph.D.,<sup>5</sup> Sirui Zhu , M.B.B.S.,<sup>2</sup> Lijie Pan , M.D.,<sup>2,</sup> Xiaoniao Chen , M.D., Ph.D.,<sup>2</sup> Xiaojia Zhang , M.B.B.S.,<sup>2</sup> Shuai Jiang , Ph.D.,<sup>6,7</sup>, Kebing Wang , M.D.,<sup>6</sup> Chenlong Yang , M.D., Ph.D.,<sup>8</sup>, Mingqiang Chen , M.B.B.S.,<sup>9</sup> Sujie Fan , M.D.,<sup>10</sup> Jianhua Hu , M.B.B.S.,<sup>10</sup> Aiguo Lv , M.B.B.S.,<sup>10</sup> Hui Miao , M.D.,<sup>10</sup> Li Guo , M.B.B.S.,<sup>10</sup> Shujun Zhang , M.B.B.S.,<sup>10</sup> Cheng Pei , M.D.,<sup>11</sup> Xiaojuan Fan , M.D.,<sup>11</sup> Jianqin Lei , M.D., Ph.D.,<sup>11</sup> Ting Wei , M.D., Ph.D.,<sup>11</sup> Junguo Duan , M.D.,<sup>12</sup> Chun Liu , M.B.B.S..,<sup>12</sup> Xiaobo Xia , M.D., Ph.D.,<sup>13</sup> Siqi Xiong , M.D., Ph.D.,<sup>13</sup> Junhong Li , M.D.,<sup>14</sup> Kyle Lam , M.R.C.S., Ph.D.,<sup>15</sup> Benny Lo , Ph.D.,<sup>16,17</sup> Yih Chung Tham , Ph.D.,<sup>18,21</sup> Tien Yin Wong , M.D., Ph.D.,<sup>19,20,21</sup> Ningli Wang , M.D., Ph.D.,<sup>2,3,6</sup> and Wu Yuan , Ph.D.<sup>1,6</sup>",
+        "bbox": [
+            81,
+            253,
+            910,
+            409
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Received: October 30, 2023; Revised: September 20, 2024; Accepted: September 26, 2024; Published: November 27, 2024",
+        "bbox": [
+            83,
+            415,
+            913,
+            433
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract",
+        "text_level": 2,
+        "bbox": [
+            83,
+            460,
+            186,
+            479
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "BACKGROUND Specialized single-use, single-modality models often have limited or no generalization to new diseases, modalities, and clinical tasks. Foundation models are built for multipurpose use, enabling them to perform tasks even when not specifically pretrained for them, and to adapt to diferent clinical applications.",
+        "bbox": [
+            81,
+            483,
+            700,
+            551
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "METHODS We present VisionFM, an artificial intelligence foundation model for ophthalmology pretrained on 3.4 million images from over 500,000 individuals, covering diverse ophthalmic diseases, imaging modalities and devices, and clinical scenarios. Pretrained based on eight modalities, VisionFM was tested for multiple applications, including disease screening and detection, prognosis and prediction, and segmentation of lesions and anatomical structures, on an ophthalmic database comprising 53 public and 12 private datasets. We compared the model against ophthalmologists with varying experience in ophthalmic and systemic disease diagnoses.",
+        "bbox": [
+            81,
+            556,
+            700,
+            691
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "RESULTS VisionFM outperformed baseline deep learning approaches in diagnosing ocular diseases, achieving an average area under the receiver operating characteristic curve (AUROC) of 0.950 (95% confidence interval [CI], 0.941 to 0.959) across eight disease categories and five imaging modalities in internal validation. In external validation, VisionFM achieved an AUROC of 0.945 (95% CI, 0.934 to 0.956) in fundus-based diabetic retinopathy recognition, and an AUROC of 0.974 (95% CI, 0.966 to 0.983) in optical coherence tomography–based age-related macular degeneration recognition. In a comparative study of diagnostic accuracy of 12 ocular diseases from fundus photographs, VisionFM shows diagnostic accuracy close to that of intermediate-level ophthalmologists. Its generalizability extends to new imaging modalities and devices, efectively handling dataset shifts. For example, VisionFM accurately graded diabetic retinopathy with an AUROC of 0.935 (95%",
+        "bbox": [
+            81,
+            695,
+            700,
+            878
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr. Qiu, Dr. Wu, and Mr. Wei contributed equally to this article.",
+        "bbox": [
+            730,
+            742,
+            903,
+            770
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The author afiliations are listed at the end of the article.",
+        "bbox": [
+            730,
+            784,
+            911,
+            811
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dr. Wang can be contacted at wningli@vip.163.com; Dr. Yuan can be contacted at wyuan@cuhk .edu.hk.",
+        "bbox": [
+            728,
+            825,
+            905,
+            878
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "NEJM AI",
+        "bbox": [
+            83,
+            54,
+            176,
+            109
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "NEJM AI 2024;1(12) DOI: 10.1056/AIoa2300221",
+        "bbox": [
+            728,
+            71,
+            913,
+            109
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            109,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "CI, 0.902 to 0.964) using an imaging modality it was never exposed to during pretraining. Furthermore, VisionFM is able to predict both glaucoma progression and the presence of intracranial tumors directly from fundus photographs.",
+        "bbox": [
+            81,
+            41,
+            483,
+            108
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "CONCLUSIONS VisionFM provides an eficient platform for diagnosis or prediction of multiple diseases using multiple imaging modalities and is scalable to incorporate additional data, modalities, and applications via its open-sourced model weights and codebase. (Funded by the Research Grants Council (RGC) of Hong Kong SAR and others.)",
+        "bbox": [
+            81,
+            114,
+            483,
+            215
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Introduction",
+        "text_level": 2,
+        "bbox": [
+            83,
+            258,
+            230,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "V it sion impairment and major ophthalmic diseases hat cause it (e.g., cataract, age-related macular degeneration, glaucoma) are prevalent globally. By 2050, an estimated 474 million individuals may experience moderate to severe vision impairment.1 There is an acute shortage of high-quality ophthalmologists, especially in low-income countries.2 Despite eforts to develop ophthalmic AI for automated diagnoses,3-16 current models have limitations. They require extensive annotated data, which is costly and ineficient. Most models focus on single or limited diseases, use single imaging modalities (e.g., fundus photographs), and are task-specific (e.g., screening for diabetic retinopathy17), limiting their broader clinical application (Fig. 1A).",
+        "bbox": [
+            81,
+            285,
+            483,
+            502
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "AI foundation models available to the public,18-20 like the generative pretrained transformer (GPT-4)21 model and the segment anything model (SAM),22 are trained on broad data and can adapt to solve a wide range of tasks, presenting new opportunities to address global ophthalmic challenges. Within the ophthalmic field, the first foundation model, RETFound,23 demonstrates such generalist intelligence by detecting diseases from retinal images. However, it processes only fundus photography and optical coherence tomography (OCT), with limited clinical tasks.",
+        "bbox": [
+            81,
+            508,
+            483,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We developed VisionFM (Fig. 1B), an ophthalmic foundation model pretrained with 3.4 million diverse ophthalmic images. It covers various ophthalmic diseases, imaging modalities, devices, and demographic data, enabling applications such as disease screening, diagnosis, phenotype subclassification, disease progression prediction, and systemic biomarker detection. VisionFM demonstrates fewshot diagnostic capabilities generalizing to unseen data. Additionally, we show that high-quality synthetic ophthalmic data that passed Turing tests24 could enhance the pretraining of foundation models like VisionFM.",
+        "bbox": [
+            81,
+            684,
+            483,
+            866
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Methods",
+        "text_level": 2,
+        "bbox": [
+            514,
+            63,
+            619,
+            83
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "STUDY DESIGN AND OVERSIGHT",
+        "text_level": 2,
+        "bbox": [
+            513,
+            98,
+            764,
+            114
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We used public and private datasets to develop and validate VisionFM. The study was conducted in accordance with the Declaration of Helsinki and was approved by the institutional review board of Beijing Tongren Hospital of Capital Medical University, the First Afiliated Hospital of Xi’an Jiaotong University, and Handan Eye Hospital Ethics Committee (TREC2023-KY126 and 2023005). Informed consent from patients was exempted by the institutional review board, as only de-identified retrospective data were used.",
+        "bbox": [
+            511,
+            119,
+            915,
+            284
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "VISIONFM PRETRAINING DATA",
+        "text_level": 2,
+        "bbox": [
+            513,
+            308,
+            750,
+            324
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Figure 1C and Figure 1D summarize the pretraining data (3.4 million images, over 560,400 participants. For more details, please refer to Supplementary Table S1). Only private data were used for pretraining on ultrasound biomicroscopy, slit-lamp, fundus fluorescein angiography, and B-scan ultrasonography due to the low availability of public data. Both public and private data were used for remaining modalities. For public magnetic resonance imaging (MRI) datasets used in pretraining, we manually removed MRI slices devoid of ocular anatomy due to low relevance to this work.",
+        "bbox": [
+            511,
+            328,
+            915,
+            510
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "VISIONFM IMPLEMENTATION AND EVALUATION",
+        "text_level": 2,
+        "bbox": [
+            513,
+            534,
+            880,
+            550
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "VisionFM uses separate encoders for eight specific ophthalmic imaging modalities. All encoders are based on Vision Transformer,25 a neural network architecture that processes an image by dividing it into patches and analyzing them using a self-attention mechanism. We leveraged the iBOT26 self-supervised learning scheme, which is based on masked image modeling and self-distillation, to pretrain each encoder. VisionFM was then examined in a diverse range of scenarios and applications as shown in the Results section and Supplementary Appendix (see Section 2) using various task-specific decoders. For ophthalmic disease diagnosis, both internal and external validation were conducted, whereas for the remaining four task categories (i.e., glaucoma forecasting; systemic biomarker and disease prediction; landmark detection; and lesion, vessel, and layer segmentation), only internal validation was conducted due to limited validation data availability. For public datasets, the original annotations were used as gold standard, and, for private datasets, the gold standard annotations were",
+        "bbox": [
+            511,
+            554,
+            916,
+            869
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            109,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            900,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0bc9f7325667600245940467c3a6c178f54079bf91f9c2fc2aa786ba6c2b981b.jpg",
+        "image_caption": [
+            "Figure 1. Overview of VisionFM: A Transition from Task-Specific to Generalist Ophthalmic Artificial Intelligence."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            210,
+            45,
+            787,
+            695
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(A) Previous ophthalmic AI models are specialized, built for a single purpose and disease (e.g., diabetic retinopathy), often focusing on a single modality (e.g., fundus photographs), and solving a single clinical task or process. (B) VisionFM is a novel AI model built to be a multipurpose, multidisease, multimodal foundation model that can simultaneously approach multiple clinical ophthalmic tasks with the ability to process multiple ophthalmic imaging modalities. (C) Data used for pretraining and evaluating VisionFM cover diverse geographic locations (18 countries in total). (D) The pretraining data (3.4 million images, over half a million participants) cover eight main ophthalmic imaging modalities captured by a wide range of devices. (E) Multimodal data are paired by diseases for multimodal learning toward modality-agnostic disease diagnosis. AMD denotes age-related macular degeneration; DR, diabetic retinopathy; FFA, fundus fluorescein angiography; FP, fundus photographs; HR, hypertensive retinopathy; MRI, magnetic resonance image; OCT, optical coherence tomography; RD, retinal detachment; RVD, retinal vein occlusion; and UBM, ultrasound biomicroscopy.",
+        "bbox": [
+            81,
+            744,
+            911,
+            869
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            888,
+            150,
+            902
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            901,
+            888,
+            911,
+            901
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            911,
+            671,
+            950
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "prepared by a minimum of two senior clinicians, taking into account the specific characteristics of the data (whether ophthalmic or radiological) and adhering to rigorous clinical standards. It is important to note that we exclusively utilized private data for which unanimous consensus on the annotation was achieved. Supplementary Appendix (see Sections 1–3) provides details, including pretraining, task-specific adaptation, and evaluation.",
+        "bbox": [
+            81,
+            41,
+            483,
+            175
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Results",
+        "text_level": 2,
+        "bbox": [
+            83,
+            212,
+            173,
+            231
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "OPHTHALMIC DISEASE RECOGNITION, GRADING, AND COMPARISON WITH CLINICIANS",
+        "text_level": 2,
+        "bbox": [
+            81,
+            247,
+            460,
+            279
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "To evaluate VisionFM’s performance, we compared VisionFM and prior state-of-the-art models, including RETFound and EficientNet-B7,27 in recognizing eight ophthalmic diseases on a large-scale benchmark comprising 23 public and 5 private datasets, covering 5 imaging modalities (Table 1; see Supplementary Table S2 for benchmark details). Two distinct implementations were developed for VisionFM: modality-agnostic (MA) disease recognition and modality- and disease-specific (MDS) implementation. The MA approach involved a single multiclass classifier that can classify an input image, regardless of the imaging modality, into one of the eight predefined ophthalmic diseases or as healthy. The MDS implementation employs a binary classifier for each disease within a specific modality to identify the presence of that disease in an image. While the MDS approach is commonly used in ophthalmic AI models,3,4,23 the MA approach is unique to VisionFM. The predictive probabilities from the classifiers were used to calculate area under the receiver operating characteristic curve (AUROC), sensitivity, and specificity. Ninety-five percent exact Clopper–Pearson confidence intervals were calculated for each metric. As summarized in Table 1, the performance of a model varies across diseases and modalities. For example, hypertensive retinopathy was more challenging to accurately diagnose using all models than diseases like retinal vein occlusion and myopia using fundus photographs. Nonetheless, the MA approach of VisionFM can surpass or be comparable to prior classifier-heavy models. While the multimodal learning scheme underlying the MA implementation can enhance the diagnoses of certain diseases such as hypertensive retinopathy, we observe that such enhancement derived from multimodal learning is not universally applicable to all disease categories. The MDS implementation of VisionFM can generally lead to higher and specialist diagnostic accuracy across diseases, achieving an overall",
+        "bbox": [
+            81,
+            284,
+            485,
+            861
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "AUROC of 0.950 (95% confidence interval [CI], 0.941 to 0.959) averaged across 16 tasks presented in Table 1. Supplementary Table S3 and Table S4 present AUROC, sensitivity, and specificity of VisionFM and baseline methods in grading age-related macular degeneration and diabetic retinopathy. Additionally, Supplementary Table S5 provides a comparison between VisionFM and RETFound across individual public datasets for multiclass disease diagnosis.",
+        "bbox": [
+            511,
+            41,
+            915,
+            191
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "To better understand VisionFM’s diagnostic capability, we compared it with that of ophthalmologists with varying levels of clinical experience. We designed a task to diagnose 12 ocular diseases (mild, moderate, or severe nonprolifera tive diabetic retinopathy; proliferative diabetic retinopathy; glaucoma; cataract; hypertensive retinopathy; myopia; ret inal vein occlusion; retinal detachment; early age-related macular degeneration; and intermediate age-related macular degeneration) where junior- and intermediate-leve ophthalmologists were asked to select the most likely, sec ond most likely, and third most likely diseases for each fun dus photograph. We recruited 38 ophthalmologists from four eye centers in China: 27 at the junior level (1 to 3 year of clinical experience) and 11 at the intermediate level (4 to 8 years of clinical experience). A total of 180 fundus pho tographs were evaluated for the diagnosis task, each annotated with consensus by four senior ophthalmologists (more than 9 years of clinical experience), with each image having a single label for the most prominent disease. This is based on the hypothesis that the ophthalmologists have the ability to diagnose the most obvious disease within their top three choices. The fundus photographs were evenly divided into three sets, and the ophthalmologists could select the same disease as their top three choices. To account for variations in clinical practice, a tutorial video explaining the diagnos tic criteria for the 12 diseases was prepared by a senior oph thalmologist. Group 1 (20 ophthalmologists) diagnosed before and after watching the video, while the remaining 18 made their diagnoses after viewing it. Ophthalmologists were blinded to each others’ diagnoses. Top-K accuracy, where the true label is within the first k choices, was calculated. Additionally, we fine-tuned VisionFM using 24 fundus photographs, with two exemplar images for each disease as shown in the tutorial video. Table 2 shows that the diagnostic ability of the fine-tuned VisionFM is comparable to or better than that of intermediate-level ophthalmolo gists who watched the tutorial video, and its performance is more consistent, as indicated by a smaller standard devi ation. Supplementary Table S6 and Table S7 show the sen sitivity and specificity of VisionFM and ophthalmologists",
+        "bbox": [
+            511,
+            200,
+            916,
+            859
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            900,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/4e7ae40ee786fc15da59d95763c9ed22e904cd3420cb2f969364be3d7ab11989.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "\\* For MA implementation, there was only one classifier trained to recognize all diseases from all imaging modalities, whereas, for MDS implementation, for each modality and disease, a separate classifier was trained (i.e., for VisionFM and EficientNet, 16 classifiers correspond to 16 tasks; and for RETFound, 11 classifiers correspond to 11 tasks, as it is only applicable to fundus- and OCT-based tasks). AUROC denotes area under the receiver operating characteristic curve; CI, exact Clopper–Pearson confidence interval; MA, modality-agnostic; MDS, modality- and diseasespecific; and OCT, optical coherence tomography. † The best results of each task."
+        ],
+        "table_body": "<table><tr><td colspan=\"13\">Table 1. Area Under the Receiver Operating Characteristic Curve, Sensitivity, and Specificity of Different Methods in Ocular Disease Diagnoses.*</td></tr><tr><td rowspan=\"2\">Disease Modality (No. of Test Images)</td><td colspan=\"4\">AUROC (95% CI)</td><td colspan=\"4\">Sensitivity (95% CI)</td><td colspan=\"4\">Specificity (95% CI)</td></tr><tr><td>VisionFM (MA)</td><td>EfficientNet (MDS)</td><td>RETFound (MDS)</td><td>VisionFM (MDS)</td><td>VisionFM (MA)</td><td>EfficientNet (MDS)</td><td>RETFound (MDS)</td><td>VisionFM (MDS)</td><td>VisionFM (MA)</td><td>EfficientNet (MDS)</td><td>RETFound (MDS)</td><td>VisionFM (MDS)</td></tr><tr><td colspan=\"13\">Diabetic retinopathy</td></tr><tr><td>Fundus (n=3894)</td><td>0.933(0.924-0.940)</td><td>0.937(0.929-0.945)</td><td>0.925(0.917-0.933)</td><td>0.942(0.934-0.949)†</td><td>80.91(79.2-82.5)</td><td>83.81(82.2-85.3)†</td><td>79.46(77.7-81.1)</td><td>83.50(81.9-85.0)</td><td>92.94(91.6-94.1)†</td><td>90.03(88.5-91.4)</td><td>92.01(90.6-93.3)</td><td>91.52(90.1-92.8)</td></tr><tr><td>OCT (n=953)</td><td>1.000(0.996-1.000)†</td><td>0.954(0.939-0.966)</td><td>0.971(0.959-0.981)</td><td>1.000(0.996-1.000)†</td><td>99.68(98.8-100.0)†</td><td>96.61(94.9-97.9)</td><td>92.26(89.9-94.2)</td><td>99.68(98.8-100.0)†</td><td>99.70(98.3-100.0)</td><td>79.88(75.2-84.1)</td><td>91.59(88.1-94.3)</td><td>100.0(98.9-100.0)†</td></tr><tr><td>Fundus fluorescein angiography (n=130)</td><td>0.977(0.935-0.995)</td><td>0.959(0.909-0.986)</td><td>-</td><td>0.998(0.969-1.000)†</td><td>89.02(80.2-94.9)</td><td>85.37(75.8-92.2)</td><td>-</td><td>100.0(95.6-100.0)†</td><td>100.0(92.6-100.0)†</td><td>93.75(82.8-98.7)</td><td>-</td><td>95.83(85.7-99.5)</td></tr><tr><td colspan=\"13\">Glaucoma</td></tr><tr><td>Fundus (n=1031)</td><td>0.932(0.915-0.947)</td><td>0.870(0.848-0.890)</td><td>0.876(0.855-0.896)</td><td>0.941(0.925-0.955)†</td><td>83.17(77.3-88.1)</td><td>79.70(73.5-85.0)</td><td>82.18(76.2-87.2)</td><td>87.62(82.3-91.8)†</td><td>90.11(87.9-92.1)†</td><td>77.56(74.6-80.4)</td><td>79.01(76.1-81.7)</td><td>85.89(83.3-88.2)</td></tr><tr><td>OCT (n=1777)</td><td>0.854(0.837-0.871)†</td><td>0.527(0.504-0.551)</td><td>0.781(0.761-0.800)</td><td>0.795(0.775-0.813)</td><td>76.99(74.7-79.2)</td><td>45.13(42.5-47.8)</td><td>63.72(61.1-66.3)</td><td>79.87(77.6-82.0)†</td><td>81.24(77.2-84.9)</td><td>61.76(56.9-66.4)</td><td>81.71(77.7-85.3)†</td><td>66.51(61.8-71.0)</td></tr><tr><td colspan=\"13\">Age-related macular degeneration</td></tr><tr><td>Fundus (n=1075)</td><td>0.860(0.838-0.881)</td><td>0.797(0.772-0.821)</td><td>0.844(0.821-0.865)</td><td>0.901(0.882-0.919)†</td><td>86.22(81.6-90.0)</td><td>78.80(73.6-83.4)</td><td>93.64(90.1-96.2)†</td><td>93.29(89.7-95.9)</td><td>73.11(69.9-76.2)†</td><td>71.21(67.9-74.3)</td><td>68.56(65.2-71.8)</td><td>72.98(69.7-76.0)</td></tr><tr><td>OCT (n=1296)</td><td>0.997(0.992-0.999)</td><td>0.987(0.979-0.992)</td><td>1.000(0.997-1.000)†</td><td>1.000(0.997-1.000)†</td><td>98.03(96.9-98.8)</td><td>98.34(97.3-99.0)</td><td>99.79(99.3-100.0)</td><td>99.90(99.4-100.0)†</td><td>100.0(98.9-100.0)†</td><td>91.89(88.4-94.6)</td><td>100.0(98.9-100.0)†</td><td>100.0(98.9-100.0)†</td></tr><tr><td colspan=\"13\">Cataract</td></tr><tr><td>Fundus (n=719)</td><td>0.971(0.956-0.982)</td><td>0.984(0.972-0.992)</td><td>0.986(0.975-0.993)</td><td>0.991(0.981-0.997)†</td><td>91.14(82.6-96.4)</td><td>96.20(89.3-99.2)</td><td>92.41(84.2-97.2)</td><td>97.47(91.2-99.7)†</td><td>96.87(95.2-98.1)</td><td>89.69(87.1-91.9)</td><td>97.34(95.8-98.4)†</td><td>96.41(94.7-97.7)</td></tr><tr><td>Slit-lamp (n=109)</td><td>1.000(0.967-1.000)†</td><td>0.995(0.957-1.000)</td><td>-</td><td>1.000(0.967-1.000)†</td><td>100.0(95.8-100.0)†</td><td>95.29(88.4-98.7)</td><td>-</td><td>100.0(95.8-100.0)†</td><td>100.0(85.8-100.0)†</td><td>100.0(85.8-100.0)†</td><td>-</td><td>100.0(85.8-100.0)†</td></tr><tr><td colspan=\"13\">Hypertensive retinopathy</td></tr><tr><td>Fundus (n=626)</td><td>0.854(0.824-0.881)†</td><td>0.592(0.552-0.631)</td><td>0.757(0.721-0.790)</td><td>0.818(0.785-0.847)</td><td>69.70(51.3-84.4)†</td><td>63.64(45.1-79.6)</td><td>57.58(39.2-74.5)</td><td>66.67(48.2-82.0)</td><td>91.40(88.8-93.5)</td><td>61.89(57.8-65.8)</td><td>94.10(91.9-95.9)†</td><td>93.59(91.3-95.4)</td></tr><tr><td colspan=\"13\">Retinal vein occlusion</td></tr><tr><td>Fundus (n=239)</td><td>0.931(0.891-0.959)</td><td>0.924(0.883-0.954)</td><td>0.939(0.901-0.966)</td><td>0.965(0.933-0.985)†</td><td>76.00(54.9-90.6)</td><td>80.00(59.3-93.2)</td><td>80.00(59.3-93.2)</td><td>96.00(79.6-99.9)†</td><td>99.07(96.7-99.9)</td><td>97.20(94.0-99.0)</td><td>100.0(98.3-100.0)†</td><td>96.73(93.4-98.7)</td></tr><tr><td>Fundus fluorescein angiography (n=252)</td><td>0.838(0.787-0.881)</td><td>0.879(0.833-0.917)</td><td>-</td><td>0.882(0.836-0.919)†</td><td>95.59(91.8-98.0)†</td><td>68.63(61.8-74.9)</td><td>-</td><td>93.63(89.3-96.6)</td><td>66.67(51.6-79.6)</td><td>93.75(82.8-98.7)†</td><td>-</td><td>77.08(62.7-88.0)</td></tr><tr><td colspan=\"13\">Myopia</td></tr><tr><td>Fundus (n=1001)</td><td>0.983(0.973-0.990)</td><td>0.967(0.954-0.977)</td><td>0.986(0.977-0.992)†</td><td>0.985(0.975-0.992)</td><td>93.30(88.6-96.5)</td><td>88.83(83.3-93.0)</td><td>93.30(88.6-96.5)</td><td>93.85(89.3-96.9)†</td><td>96.84(95.4-97.9)†</td><td>96.72(95.3-97.8)</td><td>95.62(94.0-96.9)</td><td>96.35(94.8-97.5)</td></tr><tr><td>B-scan ultrasonography (n=70)</td><td>0.978(0.911-0.998)</td><td>0.698(0.577-0.802)</td><td>-</td><td>0.987(0.925-1.000)†</td><td>100.0(73.5-100.0)†</td><td>50.00(21.1-78.9)</td><td>-</td><td>91.67(61.5-99.8)</td><td>93.10(83.3-98.1)</td><td>94.83(85.6-98.9)</td><td>-</td><td>98.28(90.8-100.0)†</td></tr><tr><td colspan=\"13\">Retinal detachment</td></tr><tr><td>Fundus (n=238)</td><td>0.996(0.978-1.000)</td><td>0.912(0.868-0.945)</td><td>1.000(0.985-1.000)†</td><td>1.000(0.985-1.000)†</td><td>96.67(82.8-99.9)</td><td>93.33(77.9-99.2)</td><td>100.0(88.4-100.0)†</td><td>100.0(88.4-100.0)†</td><td>97.12(93.8-98.9)</td><td>77.40(71.1-82.9)</td><td>100.0(98.2-100.0)†</td><td>100.0(98.2-100.0)†</td></tr><tr><td>B-scan ultrasonography (n=83)</td><td>0.960(0.893-0.991)</td><td>0.819(0.719-0.895)</td><td>-</td><td>0.990(0.939-1.000)†</td><td>96.00(79.6-99.9)†</td><td>76.00(54.9-90.6)</td><td>-</td><td>96.00(79.6-99.9)†</td><td>93.10(83.3-98.1)</td><td>81.03(68.6-90.1)</td><td>-</td><td>98.28(90.8-100.0)†</td></tr><tr><td>Average</td><td>0.942(0.932-0.951)</td><td>0.863(0.846-0.879)</td><td>0.915(0.902-0.927)</td><td>0.950(0.941-0.959)†</td><td>89.53(81.5-91.4)</td><td>79.98(76.2-84.2)</td><td>84.94(82.0-87.5)</td><td>92.45(89.0-93.2)†</td><td>91.95(89.6-93.3)†</td><td>84.91(81.6-88.2)</td><td>90.90(88.4-92.7)</td><td>91.84(90.6-93.8)</td></tr><tr><td>Number of classifier</td><td>1</td><td>16</td><td>11</td><td>16</td><td>1</td><td>16</td><td>11</td><td>16</td><td>1</td><td>16</td><td>11</td><td>16</td></tr></table>",
+        "bbox": [
+            86,
+            50,
+            910,
+            797
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            888,
+            150,
+            902
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            901,
+            888,
+            911,
+            901
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/99e7192b962897ed561ba1a28b2c19c8af397438611b58c88c4b69972536e02d.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "\\*VisionFM was fine-tuned five times using diferent random seeds to calculate the mean and standard deviation of its accuracy. The same 24 exemplar images (2 for each disease) were used in each fine-tuning process. Ophthalmologists of diferent levels were split into two groups. Group 1 first conducted diagnoses without watching the tutorial video elaborating the diagnostic standard, and then reconducted diagnoses after watching the video. Group 2 conducted diagnoses only after watching the video. Mean and standard deviation of the accuracy and age distribution were calculated for each group."
+        ],
+        "table_body": "<table><tr><td colspan=\"7\">Table 2. Comparisons Between VisionFM and Ophthalmologists at Junior and Intermediate Levels in Diagnosing 12 Ocular Diseases.*</td></tr><tr><td>Ophthalmologist Level</td><td>Number of Ophthalmologists</td><td>Age (years)</td><td>Gender</td><td>Top 1 Accuracy (%)</td><td>Top 2 Accuracy (%)</td><td>Top 3 Accuracy (%)</td></tr><tr><td colspan=\"7\">Group 1: Without watching the tutorial video elaborating the standard for ocular disease diagnoses</td></tr><tr><td>Junior (1–3 years of clinical experience)</td><td>17</td><td> $26.41 \\pm 1.75$ </td><td>Male: 4Female: 13</td><td> $48.30 \\pm 9.52$ </td><td> $56.67 \\pm 9.48$ </td><td> $61.50 \\pm 9.76$ </td></tr><tr><td>Intermediate (4–8 years of clinical experience)</td><td>3</td><td> $29.33 \\pm 1.25$ </td><td>Male: 2Female: 1</td><td> $55.37 \\pm 7.46$ </td><td> $63.52 \\pm 5.92$ </td><td> $65.37 \\pm 6.94$ </td></tr><tr><td colspan=\"7\">Group 1: After watching the tutorial video elaborating the standard for ocular disease diagnoses</td></tr><tr><td>Junior (1–3 years of clinical experience)</td><td>17</td><td> $26.41 \\pm 1.75$ </td><td>Male: 4Female: 13</td><td> $54.61 \\pm 8.20$ </td><td> $61.80 \\pm 9.00$ </td><td> $65.98 \\pm 10.45$ </td></tr><tr><td>Intermediate (4–8 years of clinical experience)</td><td>3</td><td> $29.33 \\pm 1.25$ </td><td>Male: 2Female: 1</td><td> $61.48 \\pm 0.26$ </td><td> $64.26 \\pm 2.58$ </td><td> $65.93 \\pm 3.28$ </td></tr><tr><td colspan=\"7\">Group 2: Watched the tutorial video elaborating the standard for ocular disease diagnoses</td></tr><tr><td>Junior (1–3 years of clinical experience)</td><td>27 (17 are from group 1)</td><td> $27.52 \\pm 2.27$ </td><td>Male: 4Female: 23</td><td> $59.09 \\pm 10.27$ </td><td> $65.99 \\pm 9.82$ </td><td> $70.00 \\pm 10.58$ </td></tr><tr><td>Intermediate (4–8 years of clinical experience)</td><td>11 (3 are from group 1)</td><td> $34.55 \\pm 4.64$ </td><td>Male: 3Female: 8</td><td> $65.10 \\pm 4.84$ </td><td> $71.31 \\pm 6.78$ </td><td> $73.84 \\pm 7.78$ </td></tr><tr><td>VisionFM (after few-shot learning using 2 exemplar images of each disease as shown in the tutorial video)</td><td>N/A</td><td>N/A</td><td>N/A</td><td> $65.00 \\pm 1.45$ </td><td> $77.33 \\pm 1.13$ </td><td> $84.11 \\pm 1.09$ </td></tr></table>",
+        "bbox": [
+            86,
+            44,
+            911,
+            434
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "for this task, calculated using their top-1 diagnoses. More details are available in the Supplementary Appendix (see Section 2.1).",
+        "bbox": [
+            81,
+            515,
+            483,
+            565
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "EXTERNAL VALIDATION FOR OCULAR DISEASEDIAGNOSIS AND GENERALIZATION",
+        "text_level": 2,
+        "bbox": [
+            81,
+            584,
+            431,
+            616
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "To examine the generalizability of VisionFM in disease diagnosis, external validation was conducted using three public datasets that were not included in the benchmark database: the Paraguayan dataset with 1437 fundus photographs for diabetic retinopathy28; the Indian Drishti-GS1 dataset with 101 fundus photographs for glaucoma29; and the Russian Optical Coherence Tomography Dataset for Image-Based Deep Learning Methods, with 1169 OCT images for age-related macular degeneration.30 The MDS classifiers of VisionFM and RETFound in Table 1 were used to perform recognition directly without any fine-tuning. As shown in Figure 2A–C, VisionFM outperformed RETFound on all three datasets: AUROC, 0.945 (95% CI, 0.934 to 0.956) versus 0.759 (95% CI, 0.734 to 0.785) in recognizing diabetic retinopathy; AUROC, 0.857 (95% CI, 0.760 to 0.935) versus 0.778 (95% CI, 0.660 to 0.877) in recognizing glaucoma; and AUROC, 0.974 (95% CI, 0.966 to 0.983) versus 0.844 (95% CI, 0.811 to 0.872) in recognizing age-related macular degeneration.",
+        "bbox": [
+            81,
+            619,
+            483,
+            869
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            511,
+            515,
+            913,
+            582
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Figure 2D–F summarizes the results of generalization to new modality, disease, and imaging devices. Notably, although VisionFM was never pretrained on optical coherence tomography angiography (OCTA) data, it achieved an average AUROC of 0.935 (95% CI, 0.902 to 0.964) for grading diabetic retinopathy with OCTA images on the public Diabetic Retinopathy Analysis Challenge dataset (120 images),31 surpassing the prior state-of-the-art model, EficientNet (average AUROC, 0.921; 95% CI, 0.885 to 0.953) (Supplementary Fig. S1). Additionally, VisionFM demonstrated generalizability to new imaging devices as shown in grading diabetic retinopathy on the public Deep Diabetic Retinopathy Image Dataset (100 images)32, which includes fundus photographs captured by ultra-widefield imaging devices. Its performance (average AUROC, 0.792; 95% CI, 0.724 to 0.834) is higher than that of RETFound (average AUROC, 0.779; 95% CI, 0.723",
+        "bbox": [
+            511,
+            587,
+            916,
+            868
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            109,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            900,
+            888,
+            913,
+            902
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/1f40a07301b8df37f11b71c4a70d56f34de1f519e2d5024863053c4665000f06.jpg",
+        "content": "",
+        "chart_caption": [
+            "A"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            147,
+            59,
+            390,
+            191
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/7166e1c659b935e6b42a8d1dd7bad8358ea9ad72fb1b1de34fbfe22144a3bcb7.jpg",
+        "content": "",
+        "chart_caption": [
+            "B"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            395,
+            54,
+            622,
+            202
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/7dac1861ca70e2300e8a61c6138c656b3a87a8cfb8035e58908ca3022432b353.jpg",
+        "content": "",
+        "chart_caption": [
+            "C"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            633,
+            56,
+            861,
+            193
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/a6e210d0bd4df39037f5f8e7c8749f47fedf326cd31687ab1e62fd1e649591fe.jpg",
+        "content": "",
+        "chart_caption": [
+            "D",
+            "E"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            145,
+            208,
+            392,
+            343
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/79665a94918fe559fc09919239ba050d587bb2fcdd1eb9c883b8354786f77b33.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            401,
+            209,
+            630,
+            353
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/a2db441499cbda4f3c4f619b19acf50862160d1156705d3de6c9836671c176d3.jpg",
+        "content": "",
+        "chart_caption": [
+            "F",
+            "H"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            635,
+            210,
+            859,
+            344
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/410c078c1655d3762872a4333813d9f490a97c1e28810b5eacaecd17d7d89795.jpg",
+        "content": "",
+        "chart_caption": [
+            "G"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            155,
+            382,
+            669,
+            587
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/042817ae907bcc2589c74775835d8162338041dcd39d8ec91efaf790e13af741.jpg",
+        "content": "",
+        "chart_caption": [
+            "I"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            696,
+            357,
+            862,
+            469
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/d53ea10560a9ddd5a5ce14004fa6f410e58c9a5f0af40033edbce5eba465691a.jpg",
+        "content": "",
+        "chart_caption": [
+            "Figure 2. Generalizability and Systemic Biomarker Prediction of VisionFM."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            694,
+            465,
+            862,
+            590
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "(A) External validation of fundus-based diabetic retinopathy recognition using the Paraguayan dataset<sup>28</sup> (n=1437). (B) External validation of fundus-based glaucoma recognition using the Drishti-GS1 dataset<sup>29</sup> (n=101). (C) External validation of OCT-based age-related macular degeneration recognition using the OCTDL dataset<sup>30</sup> (n=1169). (D) diabetic retinopathy grading with a new modality — OCTA, using the DRAC dataset<sup>31</sup> (n=120). (E) diabetic retinopathy grading with new imaging devices — ultra-widefield fundus photography devices using the DeepDRiD dataset<sup>32</sup> (n=100). (F) Few-shot ocular albinism diagnosis, using a private dataset (n=41). (G) Normalized rootmean-square errors of VisionFM and ResNet in predicting 38 biomarker values (n=12,176). (H) and (I) VisionFM’s predicted and actual biomarker values of uric acid, with a clinical diagnostic cutof for gout (≥360 µmol/l). (H) Prediction using external eye images (n=2890). (I) Prediction using fundus photographs (n=9286). ALT, alanine transaminase; AMD, age-related macular degeneration; AUROC, area under the receiver-operating characteristic curve; BASO, basophils; CI, confidence interval; CRE, creatinine; DBIL, direct bilirubin; DeepDRiD, Deep Diabetic Retinopathy Image Dataset; DR, diabetic retinopathy; DRAC, Diabetic Retinopathy Analysis Challenge; EO, eosinophils; GGT, gamma-glutamyl transferase; GLU, blood glucose; HCT, hematocrit; HDL, high-density lipoprotein; HGB, hemoglobin; IBIL, indirect bilirubin; LDL, low-density lipoprotein; LYM, lymphocytes; MCH, mean corpuscular hemoglobin; MCHC, mean corpuscular hemoglobin concentration; MCV, mean corpuscular volume; n, number of test images; MONO, monocytes; MPV, mean platelet volume; NEUT, neutrophils; NPDR, nonproliferative diabetic retinopathy; OCT, optical coherence tomography; OCTDL, Optica Coherence Tomography Dataset for Image-Based Deep Learning Methods; PCT, plateletcrit; PDR, proliferative diabetic retinopathy; PDW, platelet distribution width; P-LCR, platelet–large cell ratio; PLT, platelet count; RBC, red blood cell count; RDW-CV, red cell distribution width–coeficient of variation; RDW-SD, red cell distribution width–standard deviation; TBIL, total bilirubin; TC, total cholesterol; TG, triglycerides; UA, uric acid; and WBC, white blood cell count.",
+        "bbox": [
+            81,
+            628,
+            915,
+            877
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            888,
+            150,
+            902
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            901,
+            888,
+            913,
+            900
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            911,
+            671,
+            950
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "to 0.815) (Supplementary Fig. S2). VisionFM can achieve an AUROC of 0.993 (95% CI, 0.970 to 1.00) with one annotated sample (one-shot) for recognizing ocular albinism, outperforming RETFound (AUROC, 0.911; 95% CI, 0.812 to 0.981). With five samples (five-shot), the AUROC increases to 0.998 (95% CI, 0.986 to 1.00) compared with RETFound’s 0.965 (95% CI, 0.905 to 1.00), and with ten samples (ten-shot), VisionFM correctly identifies all 41 test images, surpassing RETFound again (AUROC, 0.976; 95% CI, 0.924 to 1.00) (Supplementary Fig. S3). However, as ocular albinism has a distinct phenotype, further research is needed to assess VisionFM’s few-shot capabilities for more complex ocular diseases. As shown in Supplementary Table S6 and Table S7, its few-shot diagnostic performance for multiple diseases can be further improved. For example, in grading diabetic retinopathy, junior- and intermediate-level ophthalmologists demonstrate higher sensitivity and specificity than VisionFM. More details about generalization studies are available in the Supplementary Appendix (see Section 2.2).",
+        "bbox": [
+            81,
+            41,
+            483,
+            369
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "GLAUCOMA PROGRESSION FORECASTING",
+        "text_level": 2,
+        "bbox": [
+            83,
+            392,
+            403,
+            407
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "To evaluate VisionFM’s potential in predicting glaucoma progression, a dificult task due to its asymptomatic and chronic nature, we analyzed its performance using a private dataset containing 411 participants, with an average follow-up window of 2.82 years. Specifically, VisionFM can predict whether a participant will have developed glaucoma by their next clinic visit, based on the fundus photograph taken at the current visit and the time interval between visits. VisionFM achieved an F1 score of 72.3% (95% CI, 55.0 to 86.3) in predicting glaucoma progression, outperforming RETFound (F1 score, 60.1%; 95% CI, 45.0 to 74.3). VisionFM also led in other measured metrics, including accuracy, where metrics were calculated by thresholding predictive probabilities at 0.5 (Supplementary Appendix, see Section 2.3 and Supplementary Table S8).",
+        "bbox": [
+            81,
+            412,
+            483,
+            676
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "SYSTEMIC BIOMARKERS AND DISEASE PREDICTION FROM OPHTHALMIC IMAGES",
+        "text_level": 2,
+        "bbox": [
+            81,
+            698,
+            470,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Prior research has indicated that signs of systemic diseases can manifest in ocular images.23,33,34 We assessed whether VisionFM could predict systemic biomarkers and diseases solely from ophthalmic images. Using a private dataset containing 8217 participants, we examined VisionFM’s ability to predict 38 systemic biomarkers related to complete blood count, liver function, renal function, and serum glucose and lipids from fundus and external eye photographs. VisionFM achieved an average normalized root mean square error (NRMSE) of 1.001 (95% CI, 0.991 to 1.011), compared with 1.027 (95% CI, 1.011 to 1.043) of ResNet,35 a widely used baseline model (Fig. 2G, Supplementary Table S9). Notably, VisionFM achieved an average NRMSE of 0.985 (95% CI, 0.954 to 1.015) for four renal function biomarkers, suggesting a potential association between renal and ocular health. Figure 2H and Figure 2I show VisionFM’s predicted versus actual uric acid values in the test set, with the clinical diagnosis of gout based on a cutof value (360 µmol/l).36",
+        "bbox": [
+            81,
+            734,
+            483,
+            868
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            511,
+            42,
+            915,
+            207
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "An intracranial tumor can afect an individual’s visual function. Detecting subtle alterations in ocular image induced by the tumor requires comprehensive examinations, particularly when the underlying cause remains unclear. To date, no research has investigated the direct prediction of an intracranial tumor from ophthalmic images. We explored whether VisionFM could address this gap to predict an intracranial tumor using fundus photographs. In a hospital dataset where 35 out of 58 participants were diagnosed with intracranial tumors, with only 9 exhibiting papilledema, VisionFM achieved an AUROC of 0.986 (95% CI, 0.960 to 1.00) and an area under the precision-recall curve of 0.990 (95% CI, 0.970 to 1.00) for detecting intracranial tumors. In contrast, intermediate- and seniorlevel clinicians found it challenging to identify intracranial tumors from fundus photographs (Supplementary Fig. S4 and Fig. S5, Supplementary Table S10). These results suggest that VisionFM can potentially identify patterns and systemic associations not readily apparent to humans. However, although cross-validation was conducted due to the limited data availability, future studies with larger sample sizes are necessary to confirm this preliminary finding. More details are shown in Supplementary Figure S6 and the Supplementary Appendix (see Section 2.4).",
+        "bbox": [
+            511,
+            213,
+            916,
+            609
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "OCULAR LESION, VESSEL, LAYER SEGMENTATION, AND LANDMARK DETECTION",
+        "text_level": 2,
+        "bbox": [
+            513,
+            631,
+            888,
+            662
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Segmentation and related capabilities are critical measures of foundation model performance in medical imaging. Figure 3A summarizes VisionFM’s performance in various segmentation tasks across a comprehensive benchmark comprising 22 public and 1 private dataset (Supplementary Table S11, Table S12, and Table S13). In segmenting fundus photographs, VisionFM achieved Dice similarity coefficients (which measure the extent of overlap between the true and predicted masks) of 81.75% for blood vessels and 42.07% for lesions. Notably, VisionFM outperformed both baseline models in OCT-based segmentation — RETFound and U-Net,37 a widely utilized baseline model for segmentation (Dice scores: VisionFM, 96.18% for OCT layer and 64.65% for lesion; U-Net, 89.70% for OCT layer and 52.48% for lesion; RETFound, 94.98% for OCT layer and 62.19% for lesion). Moreover, in MRI-based orbital tumor segmentation, VisionFM achieved a Dice score of 79.49%, significantly exceeding U-Net (Dice score, 41.69%). Ultrasound biomicroscopy landmark detection can facilitate the quantitative measurements of the anterior chamber angle. Therefore, we tested the models’ ability to detect three landmarks in ultrasound biomicroscopy images (dataset details are shown in Supplementary Table S14). VisionFM demonstrated higher accuracy, with an average Euclidean distance error of 4.90 pixels between the predicted and ground truth landmark points, compared with 12.85 pixels for U-Net (Supplementary Table S15). RETFound is not applicable to MRI or ultrasound biomicroscopy modalities. VisionFM also exhibited strong fewshot segmentation capabilities in segmenting OCT layers (Fig. 3B). Its one-shot segmentation capability surpassed U-Net’s ten-shot segmentation (Dice score, 77.54% vs. 76.07%) and significantly exceeded RETFound’s one-shot segmentation (Dice score, 77.54% vs. 59.71%). Figure 3C provides qualitative comparisons of these results, with further details available in the Supplementary Appendix (see Sections 2.5 and 2.6), and Supplementary Figure S7 and Figure S8. In addition, Supplementary Figure S9 highlights the interpretability of VisionFM, providing explainability of ophthalmic imaging representations, a crucial feature for building trust in AI models.",
+        "bbox": [
+            511,
+            667,
+            916,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_footnote",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            900,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            80,
+            41,
+            483,
+            518
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "EFFECTIVENESS OF SYNTHETIC OPHTHALMIC IMAGING DATA",
+        "text_level": 2,
+        "bbox": [
+            81,
+            535,
+            431,
+            568
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "As a foundation model, VisionFM requires a large volume of pretraining data to develop, but certain imaging modalities that are not commonly performed (e.g., orbital MRI) are dificult to curate. Hence, synthetic data become a potential solution to expand the dataset. Supplementary Figure S10 compares the performance of VisionFM’s slitlamp and MRI encoders that were trained with real data, synthetic data, and various proportions of both, as those two modalities had far less real data compared with the other six. The results revealed that a proper ratio of real to synthetic data improves performance, with the optimal ratio for both slit-lamp and MRI being 1:5 (real:synthetic). It is worth noting that training with only real or only synthetic data achieved similar accuracy, suggesting the potential for synthetic data to substitute real data to encourage data sharing. Supplementary Figure S11 shows examples of synthetic slit-lamp and MRI images used in the study. Supplementary Figure S12 shows the results of visual Turing tests in which ophthalmologists, radiologists, and neurosurgeons were invited to determine whether each image was synthetic or real (Supplementary Table S16). The synthetic slit-lamp data obtained a score of 42.7% ± 12.1%, and MRI data a score of 51.6% ± 4.5%. A score closer to 50% indicates that clinicians were guessing at random. Please refer to the Supplementary Appendix (see Section 1) for details.",
+        "bbox": [
+            81,
+            571,
+            483,
+            869
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            511,
+            41,
+            915,
+            174
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Discussion",
+        "text_level": 2,
+        "bbox": [
+            514,
+            219,
+            643,
+            239
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "As AI becomes a mainstream medical technology, it should be enhanced to solve a wider and more complex range of clinical tasks to address public health and global health challenges. Here, we present VisionFM, a novel, comprehensive ophthalmic image foundation model with generalist intelligence, demonstrating consistent state-of-the-art accuracy across various ophthalmic imaging modalities and clinical tasks.",
+        "bbox": [
+            511,
+            243,
+            916,
+            375
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "VisionFM achieves specialist-level diagnostic accuracy after adaptation, which is particularly valuable due to the variation in global ophthalmic practice and also useful for regions that have limited access to high-quality diagnoses. VisionFM can segment ocular lesions, vessels, and layers, and detects ocular landmarks, ofering interpretable decision support for clinicians.38 With few-shot learning ability, VisionFM could substantially reduce annotation and computing costs. VisionFM shows multifaceted generalization capabilities and robustness to dataset shift. For example, it can generalize to OCTA images for diabetic retinopathy grading despite never being exposed to OCTA during pretraining. To evaluate its generalist intelligence, we introduced and benchmarked a series of new ophthalmic tasks, such as orbital tumor segmentation and intracranial tumor prediction. Additionally, we demonstrated that its performance can be enhanced with the proper proportion of real to synthetic data, supporting collaborative projects that require privacy-preserved data sharing.39",
+        "bbox": [
+            511,
+            382,
+            916,
+            712
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "While VisionFM’s generalist capabilities were extensively evaluated, its limitations should also be acknowledged. First, although VisionFM’s pretraining data are demographically diverse, it may be biased toward the Chinese population, since the volume of private pretraining data outweighs the public. Hence, VisionFM generally achieves higher accuracy when analyzing Chinese data. Nevertheless, VisionFM demonstrates remarkable accuracy on benchmarks with diverse ethnic groups. A more balanced and inclusive pretraining dataset may improve its accuracy and generalizability.",
+        "bbox": [
+            511,
+            718,
+            916,
+            867
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_footnote",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            887,
+            150,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved",
+        "bbox": [
+            109,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            900,
+            888,
+            913,
+            902
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "chart",
+        "img_path": "images/c3f2b142b79e990e1aefe94587b9af0a0ea1964fa070888a7be00dfaaabb7097.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            91,
+            42,
+            493,
+            260
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "chart",
+        "img_path": "images/6b57d0172adc646e3b90e4d75eee3154284bc8a1888776ea12afa2167932e031.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            514,
+            44,
+            906,
+            258
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3c98c73a3062f92448c123122cbe6ec4d5eabf3b462196118835d08cb414b044.jpg",
+        "image_caption": [
+            "Figure 3. Segmentation and Detection Results of VisionFM.",
+            "(A) Quantitative segmentation results of VisionFM and comparison with RETFound and U-Net on a benchmark database containing 22 public and 1 private dataset. The number of test images of fundus vessel, fundus lesion, OCT layer, OCT lesion, and MRI orbita tumor segmentation are 367, 698, 396, 900, and 41, respectively. (B) Few-shot OCT layer segmentation performance of VisionFM and comparison with RETFound and U-Net (396 test images). (C) Qualitative examples of segmentation and landmark detection of VisionFM on diferent imaging modalities. GT denotes ground truth; MRI magnetic resonance image; OCT, optical coherence tomography; and UBM, ultrasound biomicroscopy."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            88,
+            41,
+            910,
+            575
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            81,
+            726,
+            482,
+            760
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Second, VisionFM’s ability to predict intracranial tumors using fundus photographs is promising for community-level screening and ophthalmology department settings. However, the small-scale dataset for this application requires further validation; the definitive diagnosis of an intracranial tumor necessitates a comprehensive evaluation of the patient’s medical history, additional imaging, and other clinical information. Similarly, a larger-scale validation dataset will allow for a more reliable assessment of glaucoma progression forecasting, which could aid early intervention.",
+        "bbox": [
+            81,
+            766,
+            483,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            511,
+            726,
+            915,
+            809
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Third, while VisionFM shows promise in predicting systemic biomarkers (e.g., those relevant to gout) from ocular images among individuals who would not routinely have their blood levels checked, its diagnostic accuracy currently falls short of clinical standards for broader translation.",
+        "bbox": [
+            513,
+            816,
+            915,
+            868
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10",
+        "bbox": [
+            893,
+            888,
+            913,
+            902
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            81,
+            41,
+            482,
+            75
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Fourth, VisionFM’s performance in diagnosing 12 ocular diseases from fundus photographs is comparable to that of intermediate-level ophthalmologists. However, ophthalmologists often use additional clinical information and other imaging modalities to make a diagnosis. Therefore, the diagnostic ability of an ophthalmologist may be underestimated when they are limited to using only fundus photographs.",
+        "bbox": [
+            81,
+            84,
+            483,
+            200
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Fifth, the comparative study presented in this article involved only ophthalmologists from China. Given the potential diferences in medical training and variations in ophthalmic specialties, a larger, more diverse study involving ophthalmologists from multiple countries could provide a more objective comparison between VisionFM and the broader ophthalmological community.",
+        "bbox": [
+            81,
+            209,
+            483,
+            325
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Last, while VisionFM is multimodal and multitask, many more modalities, diseases (especially rare diseases), and clinical tasks have yet to be incorporated and evaluated. However, due to VisionFM’s flexible design, new modalities, diseases, and tasks can be incorporated into the current structure through new encoders and sample-eficient fine-tuning of decoders. Hence, the clinical utility of VisionFM can be extended and verified when more data become available. Moreover, it can be integrated with a large language model40 to generate diagnostic reports.",
+        "bbox": [
+            81,
+            334,
+            483,
+            500
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In summary, as a multimodal multitask generalist foundation model, VisionFM efectively covers eight ophthalmic clinical imaging modalities and a multitude of clinical tasks. Its functionality can be extended by incorporating new imaging modalities and tasks through self-supervised pretraining and supervised fine-tuning, enabling it to manage an even broader range of ophthalmic diseases and clinical challenges.",
+        "bbox": [
+            81,
+            508,
+            483,
+            641
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Disclosures",
+        "text_level": 2,
+        "bbox": [
+            83,
+            666,
+            178,
+            681
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Author disclosures are available at ai.nejm.org.",
+        "bbox": [
+            83,
+            689,
+            348,
+            703
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "This work was supported by the Research Grants Council (RGC) of Hong Kong SAR (ECS24211020, GRF14203821, GRF14216222, GRF14201824); the Innovation and Technology Fund of Hong Kong SAR (ITS/252/23); the Science, Technology, and Innovation Commission of Shenzhen Municipality (SGDX20220530111005039); the National Natural Science Foundation of China (81730027, 82130029); and Beijing Natural Science Foundation (L212036). Kyle Lam is supported by a UK National Institute for Health and Care Research Academic Clinical Fellowship.",
+        "bbox": [
+            81,
+            713,
+            483,
+            849
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For the public data used to develop and validate VisionFM, references to their original publications are included in the Supplementary Tables S1, S2, S5, S11, and S12. The download link for each public dataset can be found in their original publication or by reaching out to the original authors, subject to their approval. The private data used in pretraining are not available to the public. Collaborations are welcome, and applications for controlled access to private data are assessed based on each individual case and subject to approval from the institutional review board. Code, model weights, a subset of private evaluation datasets, and the synthetic datasets can be downloaded from our project website: https://github.com/ABILab-CUHK/VisionFM.",
+        "bbox": [
+            511,
+            41,
+            915,
+            209
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Author Afiliations",
+        "text_level": 2,
+        "bbox": [
+            514,
+            231,
+            663,
+            246
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1Department of Biomedical Engineering, The Chinese University of Hong Kong",
+        "bbox": [
+            517,
+            248,
+            913,
+            275
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2Beijing Tongren Eye Center, Beijing Tongren Hospital, Capital Medical University, Beijing",
+        "bbox": [
+            517,
+            276,
+            913,
+            303
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3Henan Academy of Innovations in Medical Science, Zhengzhou, China",
+        "bbox": [
+            517,
+            304,
+            913,
+            319
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4Department of Informatics, King’s College London",
+        "bbox": [
+            519,
+            320,
+            813,
+            334
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5Department of Radiology, Capital Medical University, Beijing",
+        "bbox": [
+            517,
+            335,
+            870,
+            349
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "6 Intelligent Vision Plus Technology Co., Shenzhen, China",
+        "bbox": [
+            517,
+            352,
+            843,
+            364
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7 School of Life Sciences, Sun Yat-sen University, Guangzhou, China",
+        "bbox": [
+            517,
+            367,
+            898,
+            382
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "8Center for Precision Neurosurgery and Oncology, Peking University Health Science Center, Beijing",
+        "bbox": [
+            517,
+            383,
+            913,
+            409
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "9 SightAI Technology Pte, Singapore",
+        "bbox": [
+            517,
+            411,
+            723,
+            425
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "10Handan City Eye Hospital, China",
+        "bbox": [
+            516,
+            426,
+            717,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "11Department of Ophthalmology, First Afiliated Hospital of Xi’an Jiaotong University, China",
+        "bbox": [
+            514,
+            441,
+            913,
+            469
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "12 School of Ophthalmology, Chengdu University of Traditional Chinese Medicine, China",
+        "bbox": [
+            514,
+            470,
+            913,
+            496
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "13Eye Center of Xiangya Hospital, Central South University, Changsha, China",
+        "bbox": [
+            514,
+            498,
+            913,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "14 Shanxi Eye Hospital Afiliated to Shanxi Medical University, Taiyuan, China",
+        "bbox": [
+            514,
+            525,
+            913,
+            551
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "15Department of Surgery and Cancer, Imperial College London",
+        "bbox": [
+            514,
+            553,
+            870,
+            568
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "16 Precision Robotics (Hong Kong)",
+        "bbox": [
+            516,
+            569,
+            707,
+            583
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "17 Faculty of Medicine, Imperial College London",
+        "bbox": [
+            514,
+            585,
+            785,
+            599
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "18Centre for Innovation and Precision Eye Health & Department of Ophthalmology, Yong Loo Lin School of Medicine, National University of Singapore",
+        "bbox": [
+            514,
+            599,
+            915,
+            638
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "19Tsinghua Medicine, Tsinghua University, Beijing",
+        "bbox": [
+            514,
+            640,
+            797,
+            655
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "20Beijing Tsinghua Changgung Hospital",
+        "bbox": [
+            514,
+            657,
+            741,
+            671
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "21 Singapore Eye Research Institute, Singapore National Eye Centre",
+        "bbox": [
+            514,
+            672,
+            890,
+            686
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            514,
+            705,
+            606,
+            720
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. Bourne R, Steinmetz JD, Flaxman S, et al. Trends in prevalence of blindness and distance and near vision impairment over 30 years: an analysis for the global burden of disease study. Lancet Glob Health 2021;9:e130-e143. DOI: 10.1016/S2214-109X(20)30425-3.",
+        "bbox": [
+            522,
+            724,
+            915,
+            782
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. Resnikof S, Lansingh VC, Washburn L, et al. Estimated number of ophthalmologists worldwide (International Council of Ophthalmology update): will we meet the needs? Br J Ophthalmol 2020;104:588-592. DOI: 10.1136/bjophthalmol-2019-314336.",
+        "bbox": [
+            522,
+            791,
+            915,
+            849
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            887,
+            150,
+            902
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11",
+        "bbox": [
+            895,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            910,
+            671,
+            950
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "ref_text",
+        "text": "3. Gulshan V, Peng L, Coram M, et al. Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs. JAMA 2016;316:2402. DOI: 10.1001/ jama.2016.17216.",
+        "bbox": [
+            93,
+            42,
+            483,
+            99
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "4. Ting DSW, Cheung CYL, Lim G, et al. Development and validation of a deep learning system for diabetic retinopathy and related eye diseases using retinal images from multiethnic populations with diabetes. JAMA 2017;318:2211. DOI: 10.1001/jama.2017.18152.",
+        "bbox": [
+            93,
+            107,
+            482,
+            164
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "5. Sayres R, Taly A, Rahimy E, et al. Using a deep learning algorithm and integrated gradients explanation to assist grading for diabetic retinopathy. Ophthalmology 2019;126:552-564. DOI: 10.1016/j. ophtha.2018.11.016.",
+        "bbox": [
+            94,
+            172,
+            482,
+            229
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "6. Dai L, Wu L, Li H, et al. A deep learning system for detecting diabetic retinopathy across the disease spectrum. Nat Commun 2021;12:3242. DOI: 10.1038/s41467-021-23458-5.",
+        "bbox": [
+            93,
+            237,
+            482,
+            280
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "7. Varadarajan AV, Bavishi P, Ruamviboonsuk P, et al. Predicting optical coherence tomography-derived diabetic macular edema grades from fundus photographs using deep learning. Nat Commun 2020;11:130. DOI: 10.1038/s41467-019-13922-8.",
+        "bbox": [
+            94,
+            287,
+            482,
+            345
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "8. Tan TE, Anees A, Chen C, et al. Retinal photograph-based deep learning algorithms for myopia and a blockchain platform to facilitate artificial intelligence medical research: a retrospective multicohort study. Lancet Digit Health 2021;3:e317-e329. DOI: 10.1016/S2589-7500(21)00055-8.",
+        "bbox": [
+            93,
+            353,
+            483,
+            424
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "9. Burlina PM, Joshi N, Pekala M, Pacheco KD, Freund DE, Bressler NM. Automated grading of age-related macular degeneration from color fundus images using deep convolutional neural networks. JAMA Ophthalmol 2017;135:1170. DOI: 10.1001/ jamaophthalmol.2017.3782.",
+        "bbox": [
+            93,
+            433,
+            483,
+            503
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "10. Lee CS, Baughman DM, Lee AY. Deep learning is efective for classifying normal versus age-related macular degeneration OCT images. Ophthalmol Retina 2017;1:322-327. DOI: 10.1016/j. oret.2016.12.009.",
+        "bbox": [
+            86,
+            512,
+            482,
+            569
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "11. Medeiros FA, Jammal AA, Thompson AC. From machine to machine. Ophthalmology 2019;126:513-521. DOI: 10.1016/j. ophtha.2018.12.033.",
+        "bbox": [
+            86,
+            577,
+            482,
+            619
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "12. Phene S, Dunn RC, Hammel N, et al. Deep learning and glaucoma specialists. Ophthalmology 2019;126:1627-1639. DOI: 10.1016/j. ophtha.2019.07.024.",
+        "bbox": [
+            86,
+            628,
+            480,
+            670
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "13. Li F, Song D, Chen H, et al. Development and clinical deployment of a smartphone-based visual field deep learning system for glaucoma detection. Npj Digit Med 2020;3:123. DOI: 10.1038/ s41746-020-00329-9.",
+        "bbox": [
+            86,
+            679,
+            483,
+            734
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "14. Lam C, Yu C, Huang L, Rubin D. Retinal lesion detection with deep learning using image patches. Investig Opthalmol Vis Sci 2018;59:590. DOI: 10.1167/iovs.17-22721.",
+        "bbox": [
+            86,
+            744,
+            482,
+            786
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "15. Son J, Shin JY, Kim HD, Jung KH, Park KH, Park SJ. Development and validation of deep learning models for screening multiple abnormal findings in retinal fundus images. Ophthalmology 2020;127:85-94. DOI: 10.1016/j.ophtha.2019.05.029.",
+        "bbox": [
+            86,
+            795,
+            483,
+            852
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "16. Lin D, Xiong J, Liu C, et al. Application of comprehensive artificial intelligence retinal expert (CARE) system: a national real-world evidence study. Lancet Digit Health 2021;3:e486-e495. DOI: 10.1016/S2589-7500(21)00086-8.",
+        "bbox": [
+            517,
+            42,
+            913,
+            99
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "17. Ruamviboonsuk P, Tiwari R, Sayres R, et al. Real-time diabetic retinopathy screening by deep learning in a multisite national screening programme: a prospective interventional cohort study. Lancet Digit Health 2022;4:e235-e244. DOI: 10.1016/ S2589-7500(22)00017-6.",
+        "bbox": [
+            519,
+            108,
+            913,
+            179
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "18. Bommasani R, Hudson DA, Adeli E, et al. On the opportunities and risks of foundation models. July 12, 2022 (http://arxiv.org/ abs/2108.07258). Preprint.",
+        "bbox": [
+            517,
+            189,
+            913,
+            233
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "19. Moor M, Banerjee O, Abad ZSH, et al. Foundation models for generalist medical artificial intelligence. Nature 2023;616:259-265. DOI: 10.1038/s41586-023-05881-4.",
+        "bbox": [
+            517,
+            242,
+            913,
+            284
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "20. Qiu J, Li L, Sun J, et al. Large AI models in health informatics: applications, challenges, and the future. IEEE J Biomed Health Inform 2023;27:6074-6087. DOI: 10.1109/JBHI.2023.3316750.",
+        "bbox": [
+            517,
+            294,
+            913,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "21. OpenAI, Achiam J, Adler S, et al. GPT-4 technical report. March 15, 2023 (https://arxiv.org/abs/2303.08774). Preprint.",
+        "bbox": [
+            517,
+            347,
+            913,
+            375
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "22. Kirillov A, Mintun E, Ravi N, et al. Segment anything. April 5, 2023 (http://arxiv.org/abs/2304.02643). Preprint.",
+        "bbox": [
+            517,
+            383,
+            913,
+            412
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "23. Zhou Y, Chia MA, Wagner SK, et al. A foundation model for generalizable disease detection from retinal images. Nature 2023;622:156-163. DOI: 10.1038/s41586-023-06555-x.",
+        "bbox": [
+            517,
+            422,
+            913,
+            465
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "24. Salimans T, Goodfellow I, Zaremba W, Cheung V, Radford A, Chen X. Improved techniques for training GANs. June 10, 2016 (http:// arxiv.org/abs/1606.03498). Preprint.",
+        "bbox": [
+            517,
+            474,
+            913,
+            518
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "25. Dosovitskiy A, Beyer L, Kolesnikov A, et al. An image is worth 16X16 words: transformers for image recognition at scale. International Conference on Learning Representations. June 23, 2021 (https:// dblp.org/rec/conf/iclr/DosovitskiyB0WZ21.html). Preprint.",
+        "bbox": [
+            517,
+            527,
+            913,
+            585
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "26. Zhou J, Wei C, Wang H, et al. IBOT: image bert pre-training with online tokenizer. International Conference on Learning Representations. November 15, 2021 (https://arxiv.org/ abs/2111.07832). Preprint.",
+        "bbox": [
+            517,
+            594,
+            913,
+            652
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "27. Tan M, Le QV. EficientNet: rethinking model scaling for convolutional neural networks. International Conference on Learning Representations. May 28, 2019 (https://arxiv.org/ abs/1905.11946). Preprint.",
+        "bbox": [
+            519,
+            661,
+            913,
+            719
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "28. Castillo Benítez VE, Castro Matto I, Mello Román JC, et al. Dataset from fundus images for the study of diabetic retinopathy. Data Brief 2021;36:107068. DOI: 10.1016/j.dib.2021.107068.",
+        "bbox": [
+            517,
+            728,
+            913,
+            770
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "29. Sivaswamy J, Krishnadas SR, Chakravarty A, Joshi GD, Syed TA. A comprehensive retinal image dataset for the assessment of glaucoma from the optic nerve head analysis. JSM Biomed Imaging Data Pap 2015;2:1004. (https://typeset.io/pdf/a-comprehensive-retinal-image-dataset-for-the-assessment-of-d4ljnpi2b4.pdf).",
+        "bbox": [
+            517,
+            780,
+            913,
+            852
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "NEJM AI",
+        "text_level": 2,
+        "bbox": [
+            84,
+            888,
+            150,
+            902
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "12",
+        "bbox": [
+            893,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            911,
+            671,
+            950
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "ref_text",
+        "text": "30. Kulyabin M, Zhdanov A, Nikiforova A, et al. OCTDL: optical coherence tomography dataset for image-based deep learning methods. Sci Data 2024;11:365. DOI: 10.1038/s41597-024-03182-7.",
+        "bbox": [
+            86,
+            42,
+            480,
+            84
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "31. Qian B, Chen H, Wang X, et al. DRAC: diabetic retinopathy analysis challenge with ultra-wide optical coherence tomography angiography images. April 5, 2023 (http://arxiv.org/abs/2304.02389). Preprint.",
+        "bbox": [
+            86,
+            90,
+            480,
+            147
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "32. Liu R, Wang X, Wu Q, et al. DeepDRiD: diabetic retinopathy—grading and image quality estimation challenge. Patterns 2022;3:100512. DOI: 10.1016/j.patter.2022.100512.",
+        "bbox": [
+            86,
+            154,
+            480,
+            196
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "33. Poplin R, Varadarajan AV, Blumer K, et al. Prediction of cardiovascular risk factors from retinal fundus photographs via deep learning. Nat Biomed Eng 2018;2:158-164. DOI: 10.1038/ s41551-018-0195-0.",
+        "bbox": [
+            86,
+            202,
+            482,
+            258
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "34. Babenko B, Traynis I, Chen C, et al. A deep learning model for novel systemic biomarkers in photographs of the external eye: a retrospective study. Lancet Digit Health 2023;5:e257-e264. DOI: 10.1016/S2589-7500(23)00022-5.",
+        "bbox": [
+            86,
+            265,
+            480,
+            321
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "35. He K, Zhang X, Ren S, Sun J. Deep residual learning for image recognition. 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2016:770-778. DOI: 10.1109/ CVPR.2016.90.",
+        "bbox": [
+            86,
+            328,
+            480,
+            383
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "36. Neilson J, Bonnon A, Dickson A, Roddy E. Gout: diagnosis and management — summary of NICE guidance. BMJ 2022;378:o1754. DOI: 10.1136/bmj.o1754.",
+        "bbox": [
+            517,
+            42,
+            913,
+            84
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "37. Ronneberger O, Fischer P, Brox T. U-Net: Convolutional networks for biomedical image segmentation. In: Navab N, Hornegger J, Wells WM, Frangi AF, eds. Medical image computing and computer-assisted intervention — MICCAI 2015. Vol 9351. Lecture notes in computer science. Berlin: Springer International Publishing, 2015:234-241. DOI: 10.1007/978-3-319-24574-4\\_28.",
+        "bbox": [
+            519,
+            95,
+            913,
+            180
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "38. Schlegl T, Waldstein SM, Bogunovic H, et al. Fully automated detection and quantification of macular fluid in OCT using deep learning. Ophthalmology 2018;125:549-558. DOI: 10.1016/j. ophtha.2017.10.031.",
+        "bbox": [
+            517,
+            191,
+            913,
+            250
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "39. Sreejith Kumar AJ, Chong RS, Crowston JG, et al. Evaluation of generative adversarial networks for high-resolution synthetic image generation of circumpapillary optical coherence tomography images for glaucoma. JAMA Ophthalmol 2022;140:974. DOI: 10.1001/jamaophthalmol.2022.3375.",
+        "bbox": [
+            517,
+            258,
+            913,
+            330
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "ref_text",
+        "text": "40. Qiu J, Yuan W, Lam K. The application of multimodal large language models in medicine. Lancet Reg Health — West Pac 2024;45:101048. DOI: 10.1016/j.lanwpc.2024.101048.",
+        "bbox": [
+            517,
+            340,
+            913,
+            383
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI",
+        "bbox": [
+            84,
+            888,
+            150,
+            902
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "13",
+        "bbox": [
+            893,
+            888,
+            913,
+            901
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "footer",
+        "text": "NEJM AI is produced by NEJM Group, a division of the Massachusetts Medical Society. Downloaded from ai.nejm.org by a a on December 26, 2024. For personal use only. No other uses without permission. Copyright © 2024 Massachusetts Medical Society. All rights reserved.",
+        "bbox": [
+            111,
+            911,
+            671,
+            950
+        ],
+        "page_idx": 12
+    }
+]
